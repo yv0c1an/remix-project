@@ -1,4 +1,4 @@
-(self["webpackChunk"] = self["webpackChunk"] || []).push([["main"],{
+(self["webpackChunk"] = self["webpackChunk"] || []).push([[179],{
 
 /***/ 957:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
@@ -14,30 +14,17 @@ __webpack_require__(43387);
 __webpack_require__(57779);
 var _WalletConnectRemixClient = __webpack_require__(61257);
 var _walletConnectUI = __webpack_require__(20609);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/walletconnect/src/app/app.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 var remix = new _WalletConnectRemixClient.WalletConnectRemixClient();
 remix.initClient();
 function App() {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
     className: "App",
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("h4", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h4", {
       className: "mt-1",
       children: "WalletConnect"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 7
-    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_walletConnectUI.WalletConnectUI, {}, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 7
-    }, this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 11,
-    columnNumber: 5
-  }, this);
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_walletConnectUI.WalletConnectUI, {})]
+  });
 }
 var _default = App;
 exports["default"] = _default;
@@ -54,23 +41,14 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 exports.WalletConnectUI = WalletConnectUI;
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/walletconnect/src/app/walletConnectUI.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function WalletConnectUI() {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
     style: {
       display: 'inline-block'
     },
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("w3m-button", {}, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 7
-    }, this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 3,
-    columnNumber: 5
-  }, this);
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("w3m-button", {})
+  });
 }
 
 /***/ }),
@@ -85,15 +63,10 @@ var _interopRequireDefault = __webpack_require__(67085);
 var _react = _interopRequireDefault(__webpack_require__(47182));
 var _client = __webpack_require__(78244);
 var _app = _interopRequireDefault(__webpack_require__(957));
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/walletconnect/src/main.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 var container = document.getElementById('root');
 if (container) {
-  (0, _client.createRoot)(container).render( /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_app["default"], {}, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 32
-  }, void 0));
+  (0, _client.createRoot)(container).render( /*#__PURE__*/(0, _jsxRuntime.jsx)(_app["default"], {}));
 }
 
 /***/ }),
@@ -609,7 +582,7 @@ __webpack_require__.r(__webpack_exports__);
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ __webpack_require__.O(0, ["vendor"], () => (__webpack_exec__(2002)));
+/******/ __webpack_require__.O(0, [736], () => (__webpack_exec__(2002)));
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);

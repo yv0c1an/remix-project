@@ -1,4 +1,4 @@
-(self["webpackChunk"] = self["webpackChunk"] || []).push([["main"],{
+(self["webpackChunk"] = self["webpackChunk"] || []).push([[179,532],{
 
 /***/ 99433:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
@@ -52,51 +52,26 @@ var _StepList = _interopRequireDefault(__webpack_require__(52432));
 var _StepDetail = _interopRequireDefault(__webpack_require__(86190));
 __webpack_require__(21217);
 __webpack_require__(45520);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/learneth/src/App.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 var router = (0, _reactRouterDom.createHashRouter)([{
   path: '/',
-  element: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Logo["default"], {}, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 15,
-    columnNumber: 14
-  }, void 0)
+  element: /*#__PURE__*/(0, _jsxRuntime.jsx)(_Logo["default"], {})
 }, {
   path: '/home',
-  element: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Home["default"], {}, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 19,
-    columnNumber: 14
-  }, void 0)
+  element: /*#__PURE__*/(0, _jsxRuntime.jsx)(_Home["default"], {})
 }, {
   path: '/list',
-  element: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_StepList["default"], {}, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 23,
-    columnNumber: 14
-  }, void 0)
+  element: /*#__PURE__*/(0, _jsxRuntime.jsx)(_StepList["default"], {})
 }, {
   path: '/detail',
-  element: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_StepDetail["default"], {}, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 27,
-    columnNumber: 14
-  }, void 0)
+  element: /*#__PURE__*/(0, _jsxRuntime.jsx)(_StepDetail["default"], {})
 }]);
 exports.router = router;
 function App() {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.RouterProvider, {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_reactRouterDom.RouterProvider, {
       router: router
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 34,
-      columnNumber: 7
-    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_LoadingScreen["default"], {}, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 35,
-      columnNumber: 7
-    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactToastify.ToastContainer, {
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_LoadingScreen["default"], {}), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactToastify.ToastContainer, {
       position: "bottom-right",
       newestOnTop: true,
       closeOnClick: true,
@@ -106,12 +81,8 @@ function App() {
       pauseOnHover: true,
       autoClose: false,
       theme: "colored"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 36,
-      columnNumber: 7
-    }, this)]
-  }, void 0, true);
+    })]
+  });
 }
 var _default = App;
 exports["default"] = _default;
@@ -135,8 +106,7 @@ var _react = _interopRequireWildcard(__webpack_require__(47182));
 var _reactRouterDom = __webpack_require__(588);
 var _reactBootstrap = __webpack_require__(6196);
 __webpack_require__(74445);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/learneth/src/components/BackButton/index.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 function BackButton(_ref) {
@@ -152,162 +122,86 @@ function BackButton(_ref) {
   var stepId = Number(queryParams.get('stepId'));
   var nextStep = entity && entity.steps[stepId + 1];
   var previousStep = entity && entity.steps[stepId - 1];
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("nav", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("nav", {
     className: "navbar navbar-light bg-light justify-content-between pt-1 pb-1 pl-1",
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("ul", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("ul", {
       className: "nav mr-auto",
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("li", {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("li", {
         className: "nav-item",
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
           className: "btn back",
           onClick: function onClick() {
             setShow(true);
           },
           role: "button",
-          children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.OverlayTrigger, {
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactBootstrap.OverlayTrigger, {
             placement: "right",
-            overlay: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.Tooltip, {
+            overlay: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactBootstrap.Tooltip, {
               id: "tooltip-right",
               children: "Leave tutorial"
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 27,
-              columnNumber: 56
-            }, this),
-            children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+            }),
+            children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
               className: "fas fa-home pl-1"
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 28,
-              columnNumber: 15
-            }, this)
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 27,
-            columnNumber: 13
-          }, this)
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 20,
-          columnNumber: 11
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 19,
-        columnNumber: 9
-      }, this), isDetailPage && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("li", {
+            })
+          })
+        })
+      }), isDetailPage && /*#__PURE__*/(0, _jsxRuntime.jsx)("li", {
         className: "nav-item",
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Link, {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
           className: "btn",
           to: "/list?id=".concat(entity.id),
           title: "Tutorial menu",
           onClick: function onClick() {
             return window._paq.push(['trackEvent', 'learneth', 'back_to_menu_step', entity && entity.name]);
           },
-          children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
             className: "fas fa-bars"
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 35,
-            columnNumber: 15
-          }, this)
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 34,
-          columnNumber: 13
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 33,
-        columnNumber: 11
-      }, this)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 7
-    }, this), isDetailPage && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("form", {
+          })
+        })
+      })]
+    }), isDetailPage && /*#__PURE__*/(0, _jsxRuntime.jsxs)("form", {
       className: "form-inline",
-      children: [stepId > 0 && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Link, {
+      children: [stepId > 0 && /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
         to: "/detail?id=".concat(entity.id, "&stepId=").concat(stepId - 1),
         onClick: function onClick() {
           return window._paq.push(['trackEvent', 'learneth', 'previous_step', "".concat(entity.name, "/").concat(previousStep && previousStep.name)]);
         },
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
           className: "fas fa-chevron-left pr-1"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 44,
-          columnNumber: 15
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 43,
-        columnNumber: 13
-      }, this), stepId + 1, "/", entity && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        })
+      }), stepId + 1, "/", entity && /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
         className: "",
         children: entity.steps.length
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 47,
-        columnNumber: 35
-      }, this), stepId < entity.steps.length - 1 && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Link, {
+      }), stepId < entity.steps.length - 1 && /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
         to: "/detail?id=".concat(entity.id, "&stepId=").concat(stepId + 1),
         onClick: function onClick() {
           return window._paq.push(['trackEvent', 'learneth', 'next_step', "".concat(entity.name, "/").concat(nextStep && nextStep.name)]);
         },
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
           className: "fas fa-chevron-right pl-1"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 50,
-          columnNumber: 15
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 49,
-        columnNumber: 13
-      }, this)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 9
-    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.Modal, {
+        })
+      })]
+    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactBootstrap.Modal, {
       show: show,
       onHide: function onHide() {
         setShow(false);
       },
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.Modal.Header, {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_reactBootstrap.Modal.Header, {
         placeholder: '',
         closeButton: true,
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.Modal.Title, {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactBootstrap.Modal.Title, {
           children: "Leave tutorial"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 62,
-          columnNumber: 11
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 61,
-        columnNumber: 9
-      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.Modal.Body, {
+        })
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactBootstrap.Modal.Body, {
         children: "Are you sure you want to leave the tutorial?"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 64,
-        columnNumber: 9
-      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.Modal.Footer, {
-        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.Button, {
+      }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactBootstrap.Modal.Footer, {
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_reactBootstrap.Button, {
           variant: "secondary",
           onClick: function onClick() {
             setShow(false);
           },
           children: "No"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 66,
-          columnNumber: 11
-        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.Button, {
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactBootstrap.Button, {
           variant: "success",
           onClick: function onClick() {
             setShow(false);
@@ -315,26 +209,10 @@ function BackButton(_ref) {
             window._paq.push(['trackEvent', 'learneth', 'leave_tutorial', entity && entity.name]);
           },
           children: "Yes"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 74,
-          columnNumber: 11
-        }, this)]
-      }, void 0, true, {
-        fileName: _jsxFileName,
-        lineNumber: 65,
-        columnNumber: 9
-      }, this)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 55,
-      columnNumber: 7
-    }, this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 17,
-    columnNumber: 5
-  }, this);
+        })]
+      })]
+    })]
+  });
 }
 var _default = BackButton;
 exports["default"] = _default;
@@ -356,29 +234,19 @@ var _react = _interopRequireDefault(__webpack_require__(47182));
 var _BounceLoader = _interopRequireDefault(__webpack_require__(43711));
 __webpack_require__(78912);
 var _hooks = __webpack_require__(25344);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/learneth/src/components/LoadingScreen/index.tsx",
-  _this = void 0;
+var _jsxRuntime = __webpack_require__(97659);
 var LoadingScreen = function LoadingScreen() {
   var loading = (0, _hooks.useAppSelector)(function (state) {
     return state.loading.screen;
   });
-  return loading ? /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return loading ? /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
     className: "spinnersOverlay",
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_BounceLoader["default"], {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_BounceLoader["default"], {
       color: "#a7b0ae",
       size: 100,
       className: "spinnersLoading"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 7
-    }, _this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 10,
-    columnNumber: 5
-  }, _this) : null;
+    })
+  }) : null;
 };
 var _default = LoadingScreen;
 exports["default"] = _default;
@@ -402,12 +270,10 @@ var _react = _interopRequireWildcard(__webpack_require__(47182));
 var _reactBootstrap = __webpack_require__(6196);
 var _hooks = __webpack_require__(25344);
 __webpack_require__(31076);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/learneth/src/components/RepoImporter/index.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 function RepoImporter(_ref) {
-  var _this = this;
   var list = _ref.list,
     selectedRepo = _ref.selectedRepo;
   var _useState = (0, _react.useState)(false),
@@ -455,220 +321,112 @@ function RepoImporter(_ref) {
     setName('');
     setBranch('');
   };
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
-    children: [selectedRepo.name && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+    children: [selectedRepo.name && /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
       className: "container-fluid mb-3 small mt-3",
-      children: ["Tutorials from:", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("h4", {
+      children: ["Tutorials from:", /*#__PURE__*/(0, _jsxRuntime.jsx)("h4", {
         className: "mb-1",
         children: selectedRepo.name
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 43,
-        columnNumber: 11
-      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+      }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("span", {
         className: "",
         children: ["Date modified: ", new Date(selectedRepo.datemodified).toLocaleString()]
-      }, void 0, true, {
-        fileName: _jsxFileName,
-        lineNumber: 44,
-        columnNumber: 11
-      }, this)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 9
-    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      })]
+    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
       onClick: panelChange,
       style: {
         cursor: 'pointer'
       },
       className: "container-fluid d-flex mb-3 small",
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
         className: "d-flex pr-2 pl-2",
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
           className: "arrow-icon pt-1 fas fa-xs ".concat(open ? 'fa-chevron-down' : 'fa-chevron-right')
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 50,
-          columnNumber: 11
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 49,
-        columnNumber: 9
-      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        })
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
         className: "d-flex",
         children: "Import another tutorial repo"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 52,
-        columnNumber: 9
-      }, this)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 48,
-      columnNumber: 7
-    }, this), open && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      })]
+    }), open && /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
       className: "container-fluid",
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.Dropdown, {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactBootstrap.Dropdown, {
         className: "w-100",
-        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.Dropdown.Toggle, {
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_reactBootstrap.Dropdown.Toggle, {
           className: "btn btn-secondary w-100",
           id: "dropdownBasic1",
           children: "Select a repo"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 58,
-          columnNumber: 13
-        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.Dropdown.Menu, {
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactBootstrap.Dropdown.Menu, {
           className: "w-100",
           children: list.map(function (item) {
-            return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.Dropdown.Item, {
+            return /*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactBootstrap.Dropdown.Item, {
               onClick: function onClick() {
                 selectRepo(item);
               },
               children: [item.name, "-", item.branch]
-            }, "".concat(item.name, "/").concat(item.branch), true, {
-              fileName: _jsxFileName,
-              lineNumber: 63,
-              columnNumber: 17
-            }, _this);
+            }, "".concat(item.name, "/").concat(item.branch));
           })
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 61,
-          columnNumber: 13
-        }, this)]
-      }, void 0, true, {
-        fileName: _jsxFileName,
-        lineNumber: 57,
-        columnNumber: 11
-      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        })]
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
         onClick: resetAll,
         className: "small mb-3",
         style: {
           cursor: 'pointer'
         },
         children: "reset list"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 74,
-        columnNumber: 11
-      }, this)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 56,
-      columnNumber: 9
-    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      })]
+    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
       className: "container-fluid mt-3",
-      children: [open && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.Form, {
+      children: [open && /*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactBootstrap.Form, {
         onSubmit: importRepo,
-        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.Form.Group, {
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactBootstrap.Form.Group, {
           className: "form-group",
-          children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.Form.Label, {
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_reactBootstrap.Form.Label, {
             className: "mr-2",
             htmlFor: "name",
             children: "REPO"
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 84,
-            columnNumber: 15
-          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.OverlayTrigger, {
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactBootstrap.OverlayTrigger, {
             placement: "right",
-            overlay: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.Tooltip, {
+            overlay: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactBootstrap.Tooltip, {
               id: "tooltip-right",
               children: "ie username/repository"
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 87,
-              columnNumber: 58
-            }, this),
-            children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+            }),
+            children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
               className: "fas fa-question-circle"
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 88,
-              columnNumber: 17
-            }, this)
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 87,
-            columnNumber: 15
-          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.Form.Control, {
+            })
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactBootstrap.Form.Control, {
             id: "name",
             required: true,
             onChange: function onChange(e) {
               setName(e.target.value);
             },
             value: name
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 90,
-            columnNumber: 15
-          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.Form.Label, {
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactBootstrap.Form.Label, {
             htmlFor: "branch",
             children: "BRANCH"
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 98,
-            columnNumber: 15
-          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.Form.Control, {
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactBootstrap.Form.Control, {
             id: "branch",
             required: true,
             onChange: function onChange(e) {
               setBranch(e.target.value);
             },
             value: branch
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 99,
-            columnNumber: 15
-          }, this)]
-        }, void 0, true, {
-          fileName: _jsxFileName,
-          lineNumber: 83,
-          columnNumber: 13
-        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.Button, {
+          })]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactBootstrap.Button, {
           className: "btn btn-success start w-100",
           type: "submit",
           disabled: !name || !branch,
           children: ["Import ", name]
-        }, void 0, true, {
-          fileName: _jsxFileName,
-          lineNumber: 108,
-          columnNumber: 13
-        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("a", {
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("a", {
           href: "https://github.com/bunsenstraat/remix-learneth-plugin/blob/master/README.md",
           className: "d-none",
           target: "_blank",
           rel: "noreferrer",
-          children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
             className: "fas fa-info-circle"
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 112,
-            columnNumber: 15
-          }, this), " how to setup your repo"]
-        }, void 0, true, {
-          fileName: _jsxFileName,
-          lineNumber: 111,
-          columnNumber: 13
-        }, this)]
-      }, void 0, true, {
-        fileName: _jsxFileName,
-        lineNumber: 82,
-        columnNumber: 11
-      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 116,
-        columnNumber: 9
-      }, this)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 80,
-      columnNumber: 7
-    }, this)]
-  }, void 0, true);
+          }), " how to setup your repo"]
+        })]
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("hr", {})]
+    })]
+  });
 }
 var _default = RepoImporter;
 exports["default"] = _default;
@@ -691,9 +449,7 @@ var _slicedToArray2 = _interopRequireDefault(__webpack_require__(87794));
 var _react = _interopRequireWildcard(__webpack_require__(47182));
 var _reactTransitionGroup = __webpack_require__(14014);
 __webpack_require__(23241);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/learneth/src/components/SlideIn/index.tsx",
-  _this = void 0;
+var _jsxRuntime = __webpack_require__(97659);
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 var SlideIn = function SlideIn(_ref) {
@@ -705,17 +461,13 @@ var SlideIn = function SlideIn(_ref) {
   (0, _react.useEffect)(function () {
     setShow(true);
   }, []);
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactTransitionGroup.CSSTransition, {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactTransitionGroup.CSSTransition, {
     "in": show,
     timeout: 400,
     classNames: "slide",
     unmountOnExit: true,
     children: children
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 12,
-    columnNumber: 5
-  }, _this);
+  });
 };
 var _default = SlideIn;
 exports["default"] = _default;
@@ -735,21 +487,12 @@ var _reactRedux = __webpack_require__(62896);
 __webpack_require__(35607);
 var _App = _interopRequireDefault(__webpack_require__(38009));
 var _store = __webpack_require__(13458);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/learneth/src/main.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 var root = _client["default"].createRoot(document.getElementById('root'));
-root.render( /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRedux.Provider, {
+root.render( /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactRedux.Provider, {
   store: _store.store,
-  children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_App["default"], {}, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 11,
-    columnNumber: 5
-  }, void 0)
-}, void 0, false, {
-  fileName: _jsxFileName,
-  lineNumber: 10,
-  columnNumber: 3
-}, void 0));
+  children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_App["default"], {})
+}));
 
 /***/ }),
 
@@ -769,18 +512,16 @@ var _toConsumableArray2 = _interopRequireDefault(__webpack_require__(35627));
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(87794));
 var _react = _interopRequireWildcard(__webpack_require__(47182));
 var _reactRouterDom = __webpack_require__(588);
-var _reactMarkdown = _interopRequireDefault(__webpack_require__(26597));
+var _reactMarkdown = _interopRequireDefault(__webpack_require__(6358));
 var _rehypeRaw = _interopRequireDefault(__webpack_require__(36873));
-var _remarkGfm = _interopRequireDefault(__webpack_require__(44081));
+var _remarkGfm = _interopRequireDefault(__webpack_require__(76947));
 var _hooks = __webpack_require__(25344);
 var _RepoImporter = _interopRequireDefault(__webpack_require__(17073));
 __webpack_require__(74915);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/learneth/src/pages/Home/index.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 function HomePage() {
-  var _this = this;
   var _React$useState = _react["default"].useState([]),
     _React$useState2 = (0, _slicedToArray2["default"])(_React$useState, 2),
     openKeys = _React$useState2[0],
@@ -811,158 +552,78 @@ function HomePage() {
       type: 'workshop/init'
     });
   }, []);
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
     className: "App",
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_RepoImporter["default"], {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_RepoImporter["default"], {
       list: list,
       selectedRepo: selectedRepo || {}
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 7
-    }, this), selectedRepo && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+    }), selectedRepo && /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
       className: "container-fluid",
       children: Object.keys(selectedRepo.group).map(function (level) {
-        return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-          children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
             className: "mb-2 border-bottom small",
             children: [levelMap[level], ":"]
-          }, void 0, true, {
-            fileName: _jsxFileName,
-            lineNumber: 42,
-            columnNumber: 15
-          }, _this), selectedRepo.group[level].map(function (item) {
+          }), selectedRepo.group[level].map(function (item) {
             var _selectedRepo$entitie, _selectedRepo$entitie2;
-            return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-              children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-                children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+            return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+              children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
                   className: "arrow-icon",
                   onClick: function onClick() {
                     handleClick(item.id);
                   },
-                  children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+                  children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
                     className: "fas fa-xs ".concat(isOpen(item.id) ? 'fa-chevron-down' : 'fa-chevron-right')
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 52,
-                    columnNumber: 23
-                  }, _this)
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 46,
-                  columnNumber: 21
-                }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+                  })
+                }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
                   className: "workshop-link",
                   onClick: function onClick() {
                     handleClick(item.id);
                   },
                   children: selectedRepo.entities[item.id].name
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 54,
-                  columnNumber: 21
-                }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Link, {
+                }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
                   onClick: function onClick() {
                     return window._paq.push(['trackEvent', 'learneth', 'start_workshop', selectedRepo.entities[item.id].name]);
                   },
                   to: "/list?id=".concat(item.id),
                   className: "text-decoration-none float-right",
-                  children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+                  children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
                     className: "fas fa-play-circle fa-lg"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 63,
-                    columnNumber: 23
-                  }, _this)
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 62,
-                  columnNumber: 21
-                }, _this)]
-              }, void 0, true, {
-                fileName: _jsxFileName,
-                lineNumber: 45,
-                columnNumber: 19
-              }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+                  })
+                })]
+              }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
                 className: "container-fluid bg-light pt-3 mt-2 ".concat(isOpen(item.id) ? '' : 'description-collapsed'),
-                children: [levelMap[level] && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+                children: [levelMap[level] && /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
                   className: "tag pt-2 pr-1 font-weight-bold small text-uppercase",
                   children: levelMap[level]
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 67,
-                  columnNumber: 41
-                }, _this), (_selectedRepo$entitie = selectedRepo.entities[item.id].metadata.data.tags) == null ? void 0 : _selectedRepo$entitie.map(function (tag) {
-                  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+                }), (_selectedRepo$entitie = selectedRepo.entities[item.id].metadata.data.tags) == null ? void 0 : _selectedRepo$entitie.map(function (tag) {
+                  return /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
                     className: "tag pr-1 font-weight-bold small text-uppercase",
                     children: tag
-                  }, tag, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 70,
-                    columnNumber: 23
-                  }, _this);
-                }), selectedRepo.entities[item.id].steps && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+                  }, tag);
+                }), selectedRepo.entities[item.id].steps && /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
                   className: "d-none",
                   children: [selectedRepo.entities[item.id].steps.length, " step(s)"]
-                }, void 0, true, {
-                  fileName: _jsxFileName,
-                  lineNumber: 75,
-                  columnNumber: 62
-                }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+                }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
                   className: "workshop-list_description pb-3 pt-3",
-                  children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactMarkdown["default"], {
+                  children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactMarkdown["default"], {
                     rehypePlugins: [_rehypeRaw["default"]],
                     remarkPlugins: [_remarkGfm["default"]],
                     children: (_selectedRepo$entitie2 = selectedRepo.entities[item.id].description) == null ? void 0 : _selectedRepo$entitie2.content
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 78,
-                    columnNumber: 23
-                  }, _this)
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 77,
-                  columnNumber: 21
-                }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+                  })
+                }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
                   className: "actions"
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 83,
-                  columnNumber: 21
-                }, _this)]
-              }, void 0, true, {
-                fileName: _jsxFileName,
-                lineNumber: 66,
-                columnNumber: 19
-              }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+                })]
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
                 className: "mb-3"
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 85,
-                columnNumber: 19
-              }, _this)]
-            }, item.id, true, {
-              fileName: _jsxFileName,
-              lineNumber: 44,
-              columnNumber: 17
-            }, _this);
+              })]
+            }, item.id);
           })]
-        }, level, true, {
-          fileName: _jsxFileName,
-          lineNumber: 41,
-          columnNumber: 13
-        }, _this);
+        }, level);
       })
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 39,
-      columnNumber: 9
-    }, this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 36,
-    columnNumber: 5
-  }, this);
+    })]
+  });
 }
 var _default = HomePage;
 exports["default"] = _default;
@@ -982,9 +643,7 @@ Object.defineProperty(exports, "__esModule", ({
 exports["default"] = void 0;
 var _react = _interopRequireWildcard(__webpack_require__(47182));
 var _hooks = __webpack_require__(25344);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/learneth/src/pages/Logo/index.tsx",
-  _this = void 0;
+var _jsxRuntime = __webpack_require__(97659);
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 var LogoPage = function LogoPage() {
@@ -994,26 +653,14 @@ var LogoPage = function LogoPage() {
       type: 'remixide/connect'
     });
   }, []);
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("img", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)("img", {
         className: "w-100",
         src: "https://remix.ethereum.org/assets/img/remixLogo.webp"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 14,
-        columnNumber: 9
-      }, _this)
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 7
-    }, _this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 12,
-    columnNumber: 5
-  }, _this);
+      })
+    })
+  });
 };
 var _default = LogoPage;
 exports["default"] = _default;
@@ -1034,22 +681,16 @@ Object.defineProperty(exports, "__esModule", ({
 exports["default"] = void 0;
 var _react = _interopRequireWildcard(__webpack_require__(47182));
 var _reactRouterDom = __webpack_require__(588);
-var _reactMarkdown = _interopRequireDefault(__webpack_require__(26597));
+var _reactMarkdown = _interopRequireDefault(__webpack_require__(6358));
 var _rehypeRaw = _interopRequireDefault(__webpack_require__(36873));
 var _BackButton = _interopRequireDefault(__webpack_require__(50065));
 var _hooks = __webpack_require__(25344);
 __webpack_require__(77806);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/learneth/src/pages/StepDetail/index.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 function StepDetailPage() {
-  var _step$markdown,
-    _step$test,
-    _step$answer,
-    _step$answer2,
-    _this = this,
-    _step$answer3;
+  var _step$markdown, _step$test, _step$answer, _step$answer2, _step$answer3;
   var navigate = (0, _reactRouterDom.useNavigate)();
   var location = (0, _reactRouterDom.useLocation)();
   var dispatch = (0, _hooks.useAppDispatch)();
@@ -1089,48 +730,24 @@ function StepDetailPage() {
       window.scrollTo(0, document.documentElement.scrollHeight);
     }
   }, [errors, success]);
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
       className: "fixed-top",
-      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
         className: "bg-light",
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_BackButton["default"], {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_BackButton["default"], {
           entity: entity
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 47,
-          columnNumber: 11
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 46,
-        columnNumber: 9
-      }, this)
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 45,
-      columnNumber: 7
-    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        })
+      })
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
       id: "top"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 50,
-      columnNumber: 7
-    }, this), errorLoadingFile ? /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+    }), errorLoadingFile ? /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
         className: "errorloadingspacer"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 53,
-        columnNumber: 11
-      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("h1", {
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("h1", {
         className: "pl-3 pr-3 pt-3 pb-1",
         children: step.name
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 54,
-        columnNumber: 11
-      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("button", {
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
         className: "w-100nav-item rounded-0 nav-link btn btn-success test",
         onClick: function onClick() {
           dispatch({
@@ -1139,50 +756,26 @@ function StepDetailPage() {
           });
         },
         children: "Load the file"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 55,
-        columnNumber: 11
-      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
         className: "mb-4"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 66,
-        columnNumber: 11
-      }, this)]
-    }, void 0, true) : /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      })]
+    }) : /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
         className: "menuspacer"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 70,
-        columnNumber: 11
-      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("h1", {
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("h1", {
         className: "pr-3 pl-3 pt-3 pb-1",
         children: step.name
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 71,
-        columnNumber: 11
-      }, this)]
-    }, void 0, true), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      })]
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
       className: "container-fluid",
-      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactMarkdown["default"], {
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactMarkdown["default"], {
         rehypePlugins: [_rehypeRaw["default"]],
         children: (_step$markdown = step.markdown) == null ? void 0 : _step$markdown.content
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 75,
-        columnNumber: 9
-      }, this)
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 74,
-      columnNumber: 7
-    }, this), (_step$test = step.test) != null && _step$test.content ? /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("nav", {
+      })
+    }), (_step$test = step.test) != null && _step$test.content ? /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("nav", {
         className: "nav nav-pills nav-fill",
-        children: errorLoadingFile ? /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("button", {
+        children: errorLoadingFile ? /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
           className: "nav-item rounded-0 nav-link btn btn-warning test",
           onClick: function onClick() {
             dispatch({
@@ -1191,13 +784,9 @@ function StepDetailPage() {
             });
           },
           children: "Load the file"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 81,
-          columnNumber: 15
-        }, this) : /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
-          children: !errorLoadingFile ? /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
-            children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("button", {
+        }) : /*#__PURE__*/(0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
+          children: !errorLoadingFile ? /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
               className: "nav-item rounded-0 nav-link btn btn-info test",
               onClick: function onClick() {
                 dispatch({
@@ -1206,11 +795,7 @@ function StepDetailPage() {
                 });
               },
               children: "Check Answer"
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 96,
-              columnNumber: 21
-            }, this), ((_step$answer = step.answer) == null ? void 0 : _step$answer.content) && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("button", {
+            }), ((_step$answer = step.answer) == null ? void 0 : _step$answer.content) && /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
               className: "nav-item rounded-0 nav-link btn btn-warning test",
               onClick: function onClick() {
                 dispatch({
@@ -1219,24 +804,16 @@ function StepDetailPage() {
                 });
               },
               children: "Show answer"
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 108,
-              columnNumber: 23
-            }, this)]
-          }, void 0, true) : /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
-            children: !errorLoadingFile && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
-              children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("button", {
+            })]
+          }) : /*#__PURE__*/(0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
+            children: !errorLoadingFile && /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+              children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
                 className: "nav-item rounded-0 nav-link btn btn-success test",
                 onClick: function onClick() {
                   navigate(stepId === steps.length - 1 ? "/list?id=".concat(id) : "/detail?id=".concat(id, "&stepId=").concat(stepId + 1));
                 },
                 children: "Next"
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 125,
-                columnNumber: 25
-              }, this), ((_step$answer2 = step.answer) == null ? void 0 : _step$answer2.content) && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("button", {
+              }), ((_step$answer2 = step.answer) == null ? void 0 : _step$answer2.content) && /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
                 className: "nav-item rounded-0 nav-link btn btn-warning test",
                 onClick: function onClick() {
                   dispatch({
@@ -1245,67 +822,39 @@ function StepDetailPage() {
                   });
                 },
                 children: "Show answer"
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 134,
-                columnNumber: 27
-              }, this)]
-            }, void 0, true)
-          }, void 0, false)
-        }, void 0, false)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 79,
-        columnNumber: 11
-      }, this), success && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("button", {
+              })]
+            })
+          })
+        })
+      }), success && /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
         className: "w-100 rounded-0 nav-item nav-link btn btn-success",
         onClick: function onClick() {
           navigate(stepId === steps.length - 1 ? "/list?id=".concat(id) : "/detail?id=".concat(id, "&stepId=").concat(stepId + 1));
         },
         children: "Next"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 154,
-        columnNumber: 13
-      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
         id: "errors",
-        children: [success && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [success && /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
           className: "alert rounded-0 alert-success mb-0 mt-0",
           role: "alert",
           children: "Well done! No errors."
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 165,
-          columnNumber: 15
-        }, this), errors.length > 0 && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
-          children: [!success && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        }), errors.length > 0 && /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+          children: [!success && /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
             className: "alert rounded-0 alert-danger mb-0 mt-0",
             role: "alert",
             children: "Errors"
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 172,
-            columnNumber: 19
-          }, this), errors.map(function (error, index) {
-            return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+          }), errors.map(function (error, index) {
+            return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
               className: "alert rounded-0 alert-warning mb-0 mt-0",
               children: error
-            }, index, false, {
-              fileName: _jsxFileName,
-              lineNumber: 177,
-              columnNumber: 19
-            }, _this);
+            }, index);
           })]
-        }, void 0, true)]
-      }, void 0, true, {
-        fileName: _jsxFileName,
-        lineNumber: 163,
-        columnNumber: 11
-      }, this)]
-    }, void 0, true) : /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("nav", {
+        })]
+      })]
+    }) : /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("nav", {
         className: "nav nav-pills nav-fill",
-        children: !errorLoadingFile && ((_step$answer3 = step.answer) == null ? void 0 : _step$answer3.content) && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("button", {
+        children: !errorLoadingFile && ((_step$answer3 = step.answer) == null ? void 0 : _step$answer3.content) && /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
           className: "nav-item rounded-0 nav-link btn btn-warning test",
           onClick: function onClick() {
             dispatch({
@@ -1314,40 +863,24 @@ function StepDetailPage() {
             });
           },
           children: "Show answer"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 189,
-          columnNumber: 15
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 187,
-        columnNumber: 11
-      }, this), stepId < steps.length - 1 && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("button", {
+        })
+      }), stepId < steps.length - 1 && /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
         className: "w-100 btn btn-success",
         onClick: function onClick() {
           navigate("/detail?id=".concat(id, "&stepId=").concat(stepId + 1));
           window._paq.push(['trackEvent', 'learneth', 'navigate_next', "".concat(id, "/").concat(stepId + 1)]);
         },
         children: "Next"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 203,
-        columnNumber: 13
-      }, this), stepId === steps.length - 1 && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("button", {
+      }), stepId === steps.length - 1 && /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
         className: "w-100 btn btn-success",
         onClick: function onClick() {
           navigate("/list?id=".concat(id));
           window._paq.push(['trackEvent', 'learneth', 'navigate_finish', id]);
         },
         children: "Finish tutorial"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 214,
-        columnNumber: 13
-      }, this)]
-    }, void 0, true)]
-  }, void 0, true);
+      })]
+    })]
+  });
 }
 var _default = StepDetailPage;
 exports["default"] = _default;
@@ -1367,15 +900,13 @@ Object.defineProperty(exports, "__esModule", ({
 exports["default"] = void 0;
 var _react = _interopRequireDefault(__webpack_require__(47182));
 var _reactRouterDom = __webpack_require__(588);
-var _reactMarkdown = _interopRequireDefault(__webpack_require__(26597));
+var _reactMarkdown = _interopRequireDefault(__webpack_require__(6358));
 var _BackButton = _interopRequireDefault(__webpack_require__(50065));
 var _SlideIn = _interopRequireDefault(__webpack_require__(18788));
 var _hooks = __webpack_require__(25344);
 __webpack_require__(90833);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/learneth/src/pages/StepList/index.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function StepListPage() {
-  var _this = this;
   var location = (0, _reactRouterDom.useLocation)();
   var queryParams = new URLSearchParams(location.search);
   var id = queryParams.get('id');
@@ -1385,79 +916,39 @@ function StepListPage() {
     detail = _useAppSelector.detail,
     selectedId = _useAppSelector.selectedId;
   var entity = detail[selectedId].entities[id];
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
       className: "fixed-top",
-      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
         className: "bg-light",
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_BackButton["default"], {}, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 20,
-          columnNumber: 11
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 19,
-        columnNumber: 9
-      }, this)
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 7
-    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_BackButton["default"], {})
+      })
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
       id: "top"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 7
-    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("h1", {
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("h1", {
       className: "pl-3 pr-3 pt-2 pb-1 menuspacer",
       children: entity.name
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 24,
-      columnNumber: 7
-    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
       className: "container-fluid",
-      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactMarkdown["default"], {
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactMarkdown["default"], {
         children: entity.text
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 26,
-        columnNumber: 9
-      }, this)
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 25,
-      columnNumber: 7
-    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_SlideIn["default"], {
-      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("article", {
+      })
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_SlideIn["default"], {
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)("article", {
         className: "list-group m-3",
         children: entity.steps.map(function (step, i) {
-          return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Link, {
+          return /*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactRouterDom.Link, {
             to: "/detail?id=".concat(id, "&stepId=").concat(i),
             className: "rounded-0 btn btn-light border-bottom text-left steplink",
             onClick: function onClick() {
               return window._paq.push(['trackEvent', 'learneth', 'step_slide_in', "".concat(id, "/").concat(i, "/").concat(step.name)]);
             },
             children: [step.name, " \xBB"]
-          }, i, true, {
-            fileName: _jsxFileName,
-            lineNumber: 31,
-            columnNumber: 13
-          }, _this);
+          }, i);
         })
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 29,
-        columnNumber: 9
-      }, this)
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 7
-    }, this)]
-  }, void 0, true);
+      })
+    })]
+  });
 }
 var _default = StepListPage;
 exports["default"] = _default;
@@ -2361,7 +1852,7 @@ var configureAppStore = function configureAppStore() {
       return gDM().concat([].concat(_middleware));
     },
     preloadedState: initialState,
-    devTools: "development" !== 'production'
+    devTools: "production" !== 'production'
   });
   sagaMiddleware.run(rootSaga);
   return store;
@@ -2532,7 +2023,7 @@ __webpack_require__.r(__webpack_exports__);
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ __webpack_require__.O(0, ["vendor"], () => (__webpack_exec__(2002)));
+/******/ __webpack_require__.O(0, [736], () => (__webpack_exec__(2002)));
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);

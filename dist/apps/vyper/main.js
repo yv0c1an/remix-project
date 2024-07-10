@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunk"] = self["webpackChunk"] || []).push([["main"],{
+(self["webpackChunk"] = self["webpackChunk"] || []).push([[179],{
 
 /***/ 957:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
@@ -27,9 +27,9 @@ var _helper = __webpack_require__(63878);
 var _reactBootstrap = __webpack_require__(6196);
 var _CompileErrorCard = __webpack_require__(12109);
 var _CustomAccordionToggle = _interopRequireDefault(__webpack_require__(35430));
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/vyper/src/app/app.tsx",
-  _this = void 0; // Components
+var _jsxRuntime = __webpack_require__(97659);
+// Components
+
 var App = function App() {
   var _useState = (0, _react.useState)(),
     _useState2 = (0, _slicedToArray2["default"])(_useState, 2),
@@ -151,15 +151,15 @@ var App = function App() {
     _useState8 = (0, _slicedToArray2["default"])(_useState7, 2),
     cloneCount = _useState8[0],
     setCloneCount = _useState8[1];
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("main", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("main", {
     id: "vyper-plugin",
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("section", {
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("section", {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
         className: "px-3 pt-3 mb-3 w-100",
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.CustomTooltip, {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.CustomTooltip, {
           placement: "bottom",
           tooltipText: "Clone a repo of Vyper examples. Switch to the File Explorer to see the examples.",
-          children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Button["default"], {
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_Button["default"], {
             "data-id": "add-repository",
             className: "w-100 btn btn-secondary",
             onClick: function onClick() {
@@ -171,55 +171,31 @@ var App = function App() {
               });
             },
             children: "Clone a repo of Vyper examples"
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 117,
-            columnNumber: 13
-          }, _this)
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 116,
-          columnNumber: 11
-        }, _this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 115,
-        columnNumber: 9
-      }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Accordion["default"], {
+          })
+        })
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_Accordion["default"], {
         className: "border-0 w-100 mb-3 accordion-background",
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
           className: "border-0",
-          children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
             className: "",
-            children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_CustomAccordionToggle["default"], {
+            children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_CustomAccordionToggle["default"], {
               eventKey: "0",
-              children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+              children: /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
                 className: "",
                 children: "Advanced Compiler Settings"
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 132,
-                columnNumber: 17
-              }, _this)
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 131,
-              columnNumber: 15
-            }, _this)
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 130,
-            columnNumber: 13
-          }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Accordion["default"].Collapse, {
+              })
+            })
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_Accordion["default"].Collapse, {
             eventKey: "0",
-            children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+            children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
               className: "pt-2",
-              children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.Form, {
-                children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+              children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_reactBootstrap.Form, {
+                children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
                   className: "d-flex flex-row justify-content-around mb-1 mt-2",
-                  children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+                  children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
                     className: "custom-control custom-radio ".concat(state.environment === 'remote' ? 'd-flex' : 'd-flex cursor-status'),
-                    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("input", {
+                    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
                       type: "radio",
                       id: "remote-compiler",
                       "data-id": "remote-compiler",
@@ -230,26 +206,14 @@ var App = function App() {
                         return setEnvironment('remote');
                       },
                       className: "custom-control-input  ".concat(state.environment === 'remote' ? 'd-flex mr-1' : 'd-flex mr-1 cursor-status')
-                    }, void 0, false, {
-                      fileName: _jsxFileName,
-                      lineNumber: 140,
-                      columnNumber: 23
-                    }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("label", {
+                    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
                       htmlFor: "remote-compiler",
                       className: "form-check-label custom-control-label",
                       children: "Remote Compiler"
-                    }, void 0, false, {
-                      fileName: _jsxFileName,
-                      lineNumber: 141,
-                      columnNumber: 23
-                    }, _this)]
-                  }, void 0, true, {
-                    fileName: _jsxFileName,
-                    lineNumber: 139,
-                    columnNumber: 21
-                  }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+                    })]
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
                     className: "custom-control custom-radio ".concat(state.environment === 'local' ? 'mr-2' : "cursor-status"),
-                    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("input", {
+                    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
                       id: "local-compiler",
                       "data-id": "local-compiler",
                       checked: state.environment === 'local',
@@ -260,91 +224,39 @@ var App = function App() {
                         return setEnvironment('local');
                       },
                       className: "custom-control-input  ".concat(state.environment === 'local' ? '' : "cursor-status")
-                    }, void 0, false, {
-                      fileName: _jsxFileName,
-                      lineNumber: 144,
-                      columnNumber: 23
-                    }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("label", {
+                    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
                       htmlFor: "local-compiler",
                       className: "form-check-label custom-control-label",
                       children: "Local Compiler"
-                    }, void 0, false, {
-                      fileName: _jsxFileName,
-                      lineNumber: 145,
-                      columnNumber: 23
-                    }, _this)]
-                  }, void 0, true, {
-                    fileName: _jsxFileName,
-                    lineNumber: 143,
-                    columnNumber: 21
-                  }, _this)]
-                }, void 0, true, {
-                  fileName: _jsxFileName,
-                  lineNumber: 138,
-                  columnNumber: 19
-                }, _this)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 137,
-                columnNumber: 17
-              }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_LocalUrl["default"], {
+                    })]
+                  })]
+                })
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_LocalUrl["default"], {
                 url: state.localUrl,
                 setUrl: setLocalUrl,
                 environment: state.environment
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 149,
-                columnNumber: 17
-              }, _this)]
-            }, void 0, true, {
-              fileName: _jsxFileName,
-              lineNumber: 136,
-              columnNumber: 15
-            }, _this)
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 135,
-            columnNumber: 13
-          }, _this)]
-        }, void 0, true, {
-          fileName: _jsxFileName,
-          lineNumber: 129,
-          columnNumber: 11
-        }, _this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 128,
-        columnNumber: 9
-      }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+              })]
+            })
+          })]
+        })
+      }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("span", {
         className: "px-3 mt-3 mb-3 small text-warning",
-        children: ["Specify the", ' ', /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("a", {
+        children: ["Specify the", ' ', /*#__PURE__*/(0, _jsxRuntime.jsx)("a", {
           className: "text-warning",
           target: "_blank",
           href: "https://remix-ide.readthedocs.io/en/latest/vyper.html#specify-vyper-version",
           children: "compiler version"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 156,
-          columnNumber: 11
-        }, _this), ' ', "&", ' ', /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("a", {
+        }), ' ', "&", ' ', /*#__PURE__*/(0, _jsxRuntime.jsx)("a", {
           className: "text-warning",
           href: "https://remix-ide.readthedocs.io/en/latest/vyper.html#evm-version",
           target: "_blank",
           rel: "noopener noreferrer",
           children: "EVM version"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 160,
-          columnNumber: 11
-        }, _this), ' ', "in the .vy file."]
-      }, void 0, true, {
-        fileName: _jsxFileName,
-        lineNumber: 154,
-        columnNumber: 9
-      }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        }), ' ', "in the .vy file."]
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
         className: "px-3 w-100 mb-3 mt-1",
         id: "compile-btn",
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_CompilerButton["default"], {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_CompilerButton["default"], {
           compilerUrl: compilerUrl(),
           contract: contract,
           setOutput: function setOutput(name, update) {
@@ -353,50 +265,22 @@ var App = function App() {
           resetCompilerState: resetCompilerResultState,
           output: output,
           remixClient: _utils.remixClient
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 166,
-          columnNumber: 11
-        }, _this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 165,
-        columnNumber: 9
-      }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("article", {
+        })
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("article", {
         id: "result",
         className: "p-2 mx-3 border-top mt-2",
-        children: output && Object.keys(output).length > 0 && output.status !== 'failed' ? /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
-          children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_VyperResult["default"], {
+        children: output && Object.keys(output).length > 0 && output.status !== 'failed' ? /*#__PURE__*/(0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_VyperResult["default"], {
             output: output,
             plugin: _utils.remixClient
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 172,
-            columnNumber: 15
-          }, _this)
-        }, void 0, false) : output.status === 'failed' ? /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_CompileErrorCard.CompileErrorCard, {
+          })
+        }) : output.status === 'failed' ? /*#__PURE__*/(0, _jsxRuntime.jsx)(_CompileErrorCard.CompileErrorCard, {
           output: output,
           plugin: _utils.remixClient
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 175,
-          columnNumber: 13
-        }, _this) : null
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 169,
-        columnNumber: 9
-      }, _this)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 114,
-      columnNumber: 7
-    }, _this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 113,
-    columnNumber: 5
-  }, _this);
+        }) : null
+      })]
+    })
+  });
 };
 var _default = App;
 exports["default"] = _default;
@@ -416,13 +300,12 @@ exports.CompileErrorCard = CompileErrorCard;
 var _regenerator = _interopRequireDefault(__webpack_require__(59454));
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(91544));
 var _clipboard = __webpack_require__(29539);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/vyper/src/app/components/CompileErrorCard.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function CompileErrorCard(props) {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
     id: "vyperErrorResult",
     className: " d-flex flex-column p-2 alert alert-danger error vyper-compile-error vyper-panel-width",
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
       "data-id": "error-message",
       className: "text-left",
       style: {
@@ -430,14 +313,10 @@ function CompileErrorCard(props) {
         textOverflow: 'ellipsis'
       },
       children: props.output.message.trim()
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 7
-    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
       className: "d-flex flex-column pt-3 align-items-end mb-2",
-      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+      children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
           className: "border border-ai text-ai btn-sm",
           onClick: /*#__PURE__*/(0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee() {
             return _regenerator["default"].wrap(function _callee$(_context) {
@@ -456,41 +335,17 @@ function CompileErrorCard(props) {
             }, _callee);
           })),
           children: "Ask RemixAI"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 23,
-          columnNumber: 11
-        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
           className: "ml-3 pt-1 py-1",
-          children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_clipboard.CopyToClipboard, {
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_clipboard.CopyToClipboard, {
             content: props.output.message,
             className: "p-0 m-0 far fa-copy alert alert-danger",
             direction: 'top'
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 27,
-            columnNumber: 13
-          }, this)
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 26,
-          columnNumber: 11
-        }, this)]
-      }, void 0, true, {
-        fileName: _jsxFileName,
-        lineNumber: 22,
-        columnNumber: 9
-      }, this)
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 7
-    }, this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 7,
-    columnNumber: 5
-  }, this);
+          })
+        })]
+      })
+    })]
+  });
 }
 
 /***/ }),
@@ -512,8 +367,7 @@ var _slicedToArray2 = _interopRequireDefault(__webpack_require__(15159));
 var _react = _interopRequireWildcard(__webpack_require__(47182));
 var _utils = __webpack_require__(44161);
 var _Button = _interopRequireDefault(__webpack_require__(88460));
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/vyper/src/app/components/CompilerButton.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 function CompilerButton(_ref) {
@@ -528,32 +382,24 @@ function CompilerButton(_ref) {
     loadingSpinner = _useState2[0],
     setLoadingSpinnerState = _useState2[1];
   if (!contract || !contract) {
-    return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Button["default"], {
+    return /*#__PURE__*/(0, _jsxRuntime.jsx)(_Button["default"], {
       disabled: true,
       className: "w-100",
       children: "No contract selected"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 12
-    }, this);
+    });
   }
   if (!(0, _utils.isVyper)(contract)) {
-    return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Button["default"], {
+    return /*#__PURE__*/(0, _jsxRuntime.jsx)(_Button["default"], {
       disabled: true,
       className: "w-100",
       children: "Not a vyper contract"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 22,
-      columnNumber: 12
-    }, this);
+    });
   }
 
   /** Compile a Contract */
 
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_react.Fragment, {
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("button", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)(_react.Fragment, {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
       "data-id": "compile",
       onClick: /*#__PURE__*/(0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee() {
         return _regenerator["default"].wrap(function _callee$(_context) {
@@ -571,50 +417,22 @@ function CompilerButton(_ref) {
         }, _callee);
       })),
       className: "btn btn-primary w-100 d-block btn-block text-break remixui_disabled mb-1 mt-3",
-      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
         className: "d-flex align-items-center justify-content-center fa-1x",
-        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
           className: loadingSpinner ? 'fas fa-sync fa-pulse mr-1' : 'fas fa-sync mr-1'
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 37,
-          columnNumber: 11
-        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
           className: "text-truncate overflow-hidden text-nowrap",
-          children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
             children: "Compile"
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 39,
-            columnNumber: 13
-          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
             className: "ml-1 text-nowrap",
             children: contract
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 40,
-            columnNumber: 13
-          }, this)]
-        }, void 0, true, {
-          fileName: _jsxFileName,
-          lineNumber: 38,
-          columnNumber: 11
-        }, this)]
-      }, void 0, true, {
-        fileName: _jsxFileName,
-        lineNumber: 36,
-        columnNumber: 9
-      }, this)
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 7
-    }, this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 28,
-    columnNumber: 5
-  }, this);
+          })]
+        })]
+      })
+    })
+  });
 }
 var _default = CompilerButton;
 exports["default"] = _default;
@@ -635,8 +453,7 @@ exports["default"] = CustomAccordionToggle;
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(15159));
 var _react = _interopRequireWildcard(__webpack_require__(47182));
 var _AccordionToggle = __webpack_require__(26840);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/vyper/src/app/components/CustomAccordionToggle.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 function CustomAccordionToggle(_ref) {
@@ -649,21 +466,13 @@ function CustomAccordionToggle(_ref) {
   var decoratedOnClick = (0, _AccordionToggle.useAccordionToggle)(eventKey, function () {
     return setToggleAccordion(!toggleAccordion);
   });
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
     onClick: decoratedOnClick,
     className: "d-flex flex-row justify-content-between align-items-center mx-3",
-    children: [children, /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+    children: [children, /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
       className: toggleAccordion ? 'far fa-angle-down' : 'far fa-angle-right'
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 7
-    }, this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 18,
-    columnNumber: 5
-  }, this);
+    })]
+  });
 }
 
 /***/ }),
@@ -680,55 +489,34 @@ Object.defineProperty(exports, "__esModule", ({
 exports["default"] = void 0;
 var _react = _interopRequireDefault(__webpack_require__(47182));
 var _Form = _interopRequireDefault(__webpack_require__(20969));
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/vyper/src/app/components/LocalUrl.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function LocalUrlInput(_ref) {
   var url = _ref.url,
     setUrl = _ref.setUrl,
     environment = _ref.environment;
   if (environment === 'remote') {
-    return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {}, void 0, false);
+    return /*#__PURE__*/(0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {});
   }
   function updateUrl(event) {
     setUrl(event.target.value);
   }
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Form["default"], {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)(_Form["default"], {
     id: "local-url",
     className: "w-100 px-3",
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Form["default"].Group, {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_Form["default"].Group, {
       controlId: "localUrl",
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Form["default"].Label, {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_Form["default"].Label, {
         children: "Local Compiler Url"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 22,
-        columnNumber: 9
-      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Form["default"].Control, {
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_Form["default"].Control, {
         onBlur: updateUrl,
         defaultValue: url,
         type: "email",
         placeholder: "eg http://localhost:8000/compile"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 23,
-        columnNumber: 9
-      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Form["default"].Text, {
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_Form["default"].Text, {
         className: "text-muted"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 24,
-        columnNumber: 9
-      }, this)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 7
-    }, this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 20,
-    columnNumber: 5
-  }, this);
+      })]
+    })
+  });
 }
 var _default = LocalUrlInput;
 exports["default"] = _default;
@@ -750,38 +538,25 @@ var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(91544));
 var _react = _interopRequireDefault(__webpack_require__(47182));
 var _utils = __webpack_require__(44161);
 var _clipboard = __webpack_require__(29539);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/vyper/src/app/components/VyperResult.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function VyperResult(_ref) {
   var output = _ref.output,
     plugin = _ref.plugin;
-  if (!output) return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  if (!output) return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
     id: "result",
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
       className: "my-3",
       children: "No contract compiled yet."
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 36,
-      columnNumber: 9
-    }, this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 35,
-    columnNumber: 7
-  }, this);
+    })
+  });
   if ((0, _utils.isCompilationError)(output)) {
-    return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+    return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
       id: "result",
       className: "error",
       title: output.message,
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
         className: "fas fa-exclamation-circle text-danger"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 43,
-        columnNumber: 9
-      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("pre", {
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("pre", {
         "data-id": "error-message",
         className: "px-2 w-100 alert alert-danger",
         style: {
@@ -790,21 +565,13 @@ function VyperResult(_ref) {
           textOverflow: 'ellipsis'
         },
         children: output.message
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 44,
-        columnNumber: 9
-      }, this)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 42,
-      columnNumber: 7
-    }, this);
+      })]
+    });
   }
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
       className: "d-flex justify-content-center mx-3 mb-3 mt-1 vyper-panel-width flex-column",
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("button", {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
         "data-id": "compilation-details",
         className: "btn btn-secondary d-block btn-block",
         onClick: /*#__PURE__*/(0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee() {
@@ -821,26 +588,18 @@ function VyperResult(_ref) {
             }
           }, _callee);
         })),
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
           children: "Compilation Details"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 65,
-          columnNumber: 11
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 62,
-        columnNumber: 9
-      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        })
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
         className: "mt-1",
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
           className: "input-group input-group mt-3 d-flex flex-row-reverse",
-          children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+          children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
             className: "btn-group align-self-start",
             role: "group",
             "aria-label": "Copy to Clipboard",
-            children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_clipboard.CopyToClipboard, {
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_clipboard.CopyToClipboard, {
               tip: 'Copy ABI to clipboard',
               getContent: function getContent() {
                 var _Object$values$;
@@ -848,32 +607,16 @@ function VyperResult(_ref) {
               },
               direction: "bottom",
               icon: "far fa-copy",
-              children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+              children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("span", {
                 className: "btn remixui_copyButton",
-                children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+                children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
                   className: "remixui_copyIcon far fa-copy",
                   "aria-hidden": "true"
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 72,
-                  columnNumber: 19
-                }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+                }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
                   children: "ABI"
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 73,
-                  columnNumber: 19
-                }, this)]
-              }, void 0, true, {
-                fileName: _jsxFileName,
-                lineNumber: 71,
-                columnNumber: 17
-              }, this)
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 70,
-              columnNumber: 15
-            }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_clipboard.CopyToClipboard, {
+                })]
+              })
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_clipboard.CopyToClipboard, {
               tip: 'Copy Bytecode to clipboard',
               getContent: function getContent() {
                 var _Object$values$2;
@@ -881,53 +624,21 @@ function VyperResult(_ref) {
               },
               direction: "bottom",
               icon: "far fa-copy",
-              children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+              children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("span", {
                 className: "btn remixui_copyButton",
-                children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+                children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
                   className: "remixui_copyIcon far fa-copy",
                   "aria-hidden": "true"
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 78,
-                  columnNumber: 19
-                }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+                }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
                   children: "Bytecode"
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 79,
-                  columnNumber: 19
-                }, this)]
-              }, void 0, true, {
-                fileName: _jsxFileName,
-                lineNumber: 77,
-                columnNumber: 17
-              }, this)
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 76,
-              columnNumber: 15
-            }, this)]
-          }, void 0, true, {
-            fileName: _jsxFileName,
-            lineNumber: 69,
-            columnNumber: 13
-          }, this)
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 68,
-          columnNumber: 11
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 67,
-        columnNumber: 9
-      }, this)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 61,
-      columnNumber: 7
-    }, this)
-  }, void 0, false);
+                })]
+              })
+            })]
+          })
+        })
+      })]
+    })
+  });
 }
 var _default = VyperResult;
 exports["default"] = _default;
@@ -1883,15 +1594,10 @@ var _interopRequireDefault = __webpack_require__(67085);
 var _react = _interopRequireDefault(__webpack_require__(47182));
 var _client = __webpack_require__(78244);
 var _app = _interopRequireDefault(__webpack_require__(957));
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/vyper/src/main.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 var container = document.getElementById('root');
 if (container) {
-  (0, _client.createRoot)(container).render( /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_app["default"], {}, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 10,
-    columnNumber: 5
-  }, void 0));
+  (0, _client.createRoot)(container).render( /*#__PURE__*/(0, _jsxRuntime.jsx)(_app["default"], {}));
 }
 
 /***/ }),
@@ -1935,10 +1641,8 @@ var _react = _interopRequireWildcard(__webpack_require__(47182));
 var _copyToClipboard = _interopRequireDefault(__webpack_require__(93700));
 __webpack_require__(24512);
 var _helper = __webpack_require__(63878);
-var _jsxDevRuntime = __webpack_require__(16872);
+var _jsxRuntime = __webpack_require__(97659);
 var _excluded = ["tip", "icon", "direction", "getContent", "children"];
-var _jsxFileName = "/workspaces/remix-project/libs/remix-ui/clipboard/src/lib/copy-to-clipboard/copy-to-clipboard.tsx",
-  _this = void 0;
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 var CopyToClipboard = function CopyToClipboard(props) {
@@ -1987,33 +1691,21 @@ var CopyToClipboard = function CopyToClipboard(props) {
       return setMessage(tip);
     }, 500);
   };
-  var childJSX = children || /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", Object.assign({
+  var childJSX = children || /*#__PURE__*/(0, _jsxRuntime.jsx)("i", Object.assign({
     className: "far ".concat(icon, " ml-1 p-2"),
     "aria-hidden": "true"
-  }, otherProps), void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 55,
-    columnNumber: 32
-  }, _this);
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("a", {
+  }, otherProps));
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("a", {
     href: "#",
     onClick: handleClick,
     onMouseLeave: reset,
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.CustomTooltip, {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.CustomTooltip, {
       tooltipText: message,
       tooltipId: "overlay-tooltip",
       placement: direction,
       children: childJSX
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 59,
-      columnNumber: 7
-    }, _this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 58,
-    columnNumber: 5
-  }, _this);
+    })
+  });
 };
 exports.CopyToClipboard = CopyToClipboard;
 var _default = CopyToClipboard;
@@ -2208,7 +1900,7 @@ Object.defineProperty(exports, "__esModule", ({
 exports.PluginViewWrapper = void 0;
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(15159));
 var _react = _interopRequireWildcard(__webpack_require__(47182));
-var _jsxDevRuntime = __webpack_require__(16872);
+var _jsxRuntime = __webpack_require__(97659);
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 var PluginViewWrapper = function PluginViewWrapper(props) {
@@ -2221,11 +1913,11 @@ var PluginViewWrapper = function PluginViewWrapper(props) {
       props.plugin.setDispatch(setState);
     }
   }, []);
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
-    children: state ? /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
+    children: state ? /*#__PURE__*/(0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
       children: props.plugin.updateComponent(state)
-    }, void 0, false) : /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {}, void 0, false)
-  }, void 0, false);
+    }) : /*#__PURE__*/(0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {})
+  });
 };
 exports.PluginViewWrapper = PluginViewWrapper;
 
@@ -2244,9 +1936,9 @@ exports.ProxyDropdownMenu = exports.ProxyAddressToggle = exports.CustomToggle = 
 var _react = _interopRequireDefault(__webpack_require__(47182));
 var _reactIntl = __webpack_require__(24831);
 var _helper = __webpack_require__(63878);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/libs/remix-ui/helper/src/lib/components/custom-dropdown.tsx",
-  _this = void 0; // The forwardRef is important!!
+var _jsxRuntime = __webpack_require__(97659);
+// The forwardRef is important!!
+
 // Dropdown needs access to the DOM node in order to position the Menu
 var CustomToggle = /*#__PURE__*/_react["default"].forwardRef(function (_ref, ref) {
   var children = _ref.children,
@@ -2254,58 +1946,30 @@ var CustomToggle = /*#__PURE__*/_react["default"].forwardRef(function (_ref, ref
     icon = _ref.icon,
     _ref$className = _ref.className,
     className = _ref$className === void 0 ? '' : _ref$className;
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("button", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
     ref: ref,
     onClick: function onClick(e) {
       e.preventDefault();
       _onClick(e);
     },
     className: className.replace('dropdown-toggle', ''),
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
       className: "d-flex",
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
         className: "mr-auto text-nowrap text-truncate overflow-hidden",
         children: children
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 32,
-        columnNumber: 9
-      }, _this), icon && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      }), icon && /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
         className: "pr-1",
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
           className: "".concat(icon, " pr-1")
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 35,
-          columnNumber: 13
-        }, _this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 34,
-        columnNumber: 11
-      }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+        })
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
           className: "fad fa-sort-circle"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 39,
-          columnNumber: 11
-        }, _this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 38,
-        columnNumber: 9
-      }, _this)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 7
-    }, _this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 23,
-    columnNumber: 5
-  }, _this);
+        })
+      })]
+    })
+  });
 });
 exports.CustomToggle = CustomToggle;
 var CustomIconsToggle = /*#__PURE__*/_react["default"].forwardRef(function (_ref2, ref) {
@@ -2313,7 +1977,7 @@ var CustomIconsToggle = /*#__PURE__*/_react["default"].forwardRef(function (_ref
     icon = _ref2.icon,
     _ref2$className = _ref2.className,
     className = _ref2$className === void 0 ? '' : _ref2$className;
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
     ref: ref,
     onClick: function onClick(e) {
       e.preventDefault();
@@ -2321,38 +1985,22 @@ var CustomIconsToggle = /*#__PURE__*/_react["default"].forwardRef(function (_ref
     },
     className: "".concat(className.replace('dropdown-toggle', ''), " mr-1 mb-0 pb-0 d-flex justify-content-end align-items-end remixuimenuicon_shadow remixuimenuicon_hamburger_menu fs-3"),
     "data-id": "workspaceMenuDropdown",
-    children: icon && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.CustomTooltip, {
+    children: icon && /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.CustomTooltip, {
       placement: 'top',
       tooltipClasses: "text-nowrap text-left",
       tooltipId: "remixHamburgerTooltip",
-      tooltipText: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactIntl.FormattedMessage, {
+      tooltipText: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactIntl.FormattedMessage, {
         id: "filePanel.workspaceActions"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 74,
-        columnNumber: 24
-      }, _this),
-      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+      }),
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
         style: {
           fontSize: 'large'
         },
         className: "".concat(icon),
         "data-id": "workspaceDropdownMenuIcon"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 76,
-        columnNumber: 11
-      }, _this)
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 70,
-      columnNumber: 9
-    }, _this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 60,
-    columnNumber: 5
-  }, _this);
+      })
+    })
+  });
 });
 
 // forwardRef again here!
@@ -2365,28 +2013,20 @@ var CustomMenu = /*#__PURE__*/_react["default"].forwardRef(function (_ref3, ref)
     className = _ref3.className,
     labeledBy = _ref3['aria-labelledby'];
   var height = window.innerHeight * 0.6;
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
     ref: ref,
     style: style,
     className: className,
     "aria-labelledby": labeledBy,
     "data-id": dataId,
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("ul", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("ul", {
       className: "overflow-auto list-unstyled mb-0",
       style: {
         maxHeight: height + 'px'
       },
       children: children
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 105,
-      columnNumber: 9
-    }, _this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 104,
-    columnNumber: 7
-  }, _this);
+    })
+  });
 });
 exports.CustomMenu = CustomMenu;
 var ProxyAddressToggle = /*#__PURE__*/_react["default"].forwardRef(function (_ref4, ref) {
@@ -2396,7 +2036,7 @@ var ProxyAddressToggle = /*#__PURE__*/_react["default"].forwardRef(function (_re
     className = _ref4$className === void 0 ? '' : _ref4$className,
     _onChange = _ref4.onChange;
   var intl = (0, _reactIntl.useIntl)();
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
     ref: ref,
     onClick: function onClick(e) {
       e.preventDefault();
@@ -2404,7 +2044,7 @@ var ProxyAddressToggle = /*#__PURE__*/_react["default"].forwardRef(function (_re
     },
     className: 'd-flex ' + className.replace('dropdown-toggle', ''),
     "data-id": "toggleProxyAddressDropdown",
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("input", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
       onChange: function onChange(e) {
         e.preventDefault();
         _onChange(e);
@@ -2418,16 +2058,8 @@ var ProxyAddressToggle = /*#__PURE__*/_react["default"].forwardRef(function (_re
         width: '100%'
       },
       "data-id": "ERC1967AddressInput"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 139,
-      columnNumber: 9
-    }, _this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 130,
-    columnNumber: 7
-  }, _this);
+    })
+  });
 });
 exports.ProxyAddressToggle = ProxyAddressToggle;
 var ProxyDropdownMenu = /*#__PURE__*/_react["default"].forwardRef(function (_ref5, ref) {
@@ -2435,24 +2067,16 @@ var ProxyDropdownMenu = /*#__PURE__*/_react["default"].forwardRef(function (_ref
     style = _ref5.style,
     className = _ref5.className,
     labeledBy = _ref5['aria-labelledby'];
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
     ref: ref,
     style: style,
     className: className,
     "aria-labelledby": labeledBy,
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("ul", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("ul", {
       className: "list-unstyled mb-0",
       children: children
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 172,
-      columnNumber: 9
-    }, _this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 171,
-    columnNumber: 7
-  }, _this);
+    })
+  });
 });
 exports.ProxyDropdownMenu = ProxyDropdownMenu;
 
@@ -2470,8 +2094,7 @@ Object.defineProperty(exports, "__esModule", ({
 exports.CustomTooltip = CustomTooltip;
 var _react = _interopRequireWildcard(__webpack_require__(47182));
 var _reactBootstrap = __webpack_require__(6196);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/libs/remix-ui/helper/src/lib/components/custom-tooltip.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 function CustomTooltip(_ref) {
@@ -2489,56 +2112,32 @@ function CustomTooltip(_ref) {
     });
     tooltipText = newTooltipText;
   }
-  return !hide ? /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_react.Fragment, {
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.OverlayTrigger, {
+  return !hide ? /*#__PURE__*/(0, _jsxRuntime.jsx)(_react.Fragment, {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactBootstrap.OverlayTrigger, {
       placement: placement,
-      overlay: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.Popover, {
+      overlay: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactBootstrap.Popover, {
         id: "popover-positioned-".concat(placement),
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.Popover.Content, {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactBootstrap.Popover.Content, {
           id: !tooltipId ? "".concat(tooltipText, "Tooltip") : tooltipId,
           style: {
             minWidth: 'fit-content'
           },
           className: 'text-wrap p-1 px-2 bg-secondary w-100' + tooltipClasses,
-          children: typeof tooltipText === 'string' ? /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+          children: typeof tooltipText === 'string' ? /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
             className: 'text-wrap p-1 px-2 bg-secondary ' + {
               tooltipTextClasses: tooltipTextClasses
             },
             children: tooltipText
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 27,
-            columnNumber: 52
-          }, this) : tooltipText
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 22,
-          columnNumber: 15
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 21,
-        columnNumber: 13
-      }, this),
+          }) : tooltipText
+        })
+      }),
       children: children
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 9
-    }, this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 17,
-    columnNumber: 7
-  }, this) : /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_react.Fragment, {
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
+    })
+  }) : /*#__PURE__*/(0, _jsxRuntime.jsx)(_react.Fragment, {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
       children: children
-    }, void 0, false)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 35,
-    columnNumber: 7
-  }, this);
+    })
+  });
 }
 
 /***/ }),
@@ -2556,462 +2155,216 @@ exports.RenderIf = RenderIf;
 exports.RenderIfNot = RenderIfNot;
 exports.upgradeWithProxyMsg = exports.upgradeReportMsg = exports.unavailableProxyLayoutMsg = exports.storageFullMessage = exports.sourceVerificationNotAvailableToastMsg = exports.recursivePasteToastMsg = exports.notFoundToastMsg = exports.logBuilder = exports.localCompilationToastMsg = exports.fileChangedToastMsg = exports.envChangeNotification = exports.deployWithProxyMsg = exports.compilingToastMsg = exports.compilerConfigChangedToastMsg = exports.compileToastMsg = exports.compilationFinishedToastMsg = exports.cancelUpgradeMsg = exports.cancelProxyMsg = void 0;
 var _react = _interopRequireDefault(__webpack_require__(47182));
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/libs/remix-ui/helper/src/lib/helper-components.tsx",
-  _this = void 0;
+var _jsxRuntime = __webpack_require__(97659);
 var fileChangedToastMsg = function fileChangedToastMsg(from, path) {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
       className: "fas fa-exclamation-triangle text-danger mr-1"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 6,
-      columnNumber: 5
-    }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
-      children: [from, " ", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("span", {
+      children: [from, " ", /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
         className: "font-weight-bold text-warning",
         children: "is modifying"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 8,
-        columnNumber: 14
-      }, _this), " ", path]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 5
-    }, _this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 5,
-    columnNumber: 3
-  }, _this);
+      }), " ", path]
+    })]
+  });
 };
 exports.fileChangedToastMsg = fileChangedToastMsg;
 var compilerConfigChangedToastMsg = function compilerConfigChangedToastMsg(from, value) {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
       children: from
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 5
-    }, _this), " is updating the ", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+    }), " is updating the ", /*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
       children: "Solidity compiler configuration"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 35
-    }, _this), ".", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("pre", {
+    }), ".", /*#__PURE__*/(0, _jsxRuntime.jsx)("pre", {
       className: "text-left",
       children: value
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 74
-    }, _this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 14,
-    columnNumber: 3
-  }, _this);
+    })]
+  });
 };
 exports.compilerConfigChangedToastMsg = compilerConfigChangedToastMsg;
 var compileToastMsg = function compileToastMsg(from, fileName) {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
       children: from
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 5
-    }, _this), " is requiring to compile ", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+    }), " is requiring to compile ", /*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
       children: fileName
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 43
-    }, _this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 20,
-    columnNumber: 3
-  }, _this);
+    })]
+  });
 };
 exports.compileToastMsg = compileToastMsg;
 var compilingToastMsg = function compilingToastMsg(settings) {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
       children: "Recompiling and debugging with params"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 5
-    }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("pre", {
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("pre", {
       className: "text-left",
       children: settings
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 5
-    }, _this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 26,
-    columnNumber: 3
-  }, _this);
+    })]
+  });
 };
 exports.compilingToastMsg = compilingToastMsg;
 var compilationFinishedToastMsg = function compilationFinishedToastMsg() {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
       children: "Compilation failed..."
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 34,
-      columnNumber: 5
-    }, _this), " continuing ", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+    }), " continuing ", /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
       children: "without"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 34,
-      columnNumber: 45
-    }, _this), " source code debugging."]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 33,
-    columnNumber: 3
-  }, _this);
+    }), " source code debugging."]
+  });
 };
 exports.compilationFinishedToastMsg = compilationFinishedToastMsg;
 var notFoundToastMsg = function notFoundToastMsg(address) {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("b", {
       children: ["Contract ", address, " not found in source code repository"]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 5
-    }, _this), " continuing ", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+    }), " continuing ", /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
       children: "without"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 78
-    }, _this), " source code debugging."]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 39,
-    columnNumber: 3
-  }, _this);
+    }), " source code debugging."]
+  });
 };
 exports.notFoundToastMsg = notFoundToastMsg;
 var localCompilationToastMsg = function localCompilationToastMsg() {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
       children: "Using compilation result from Solidity module"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 46,
-      columnNumber: 5
-    }, _this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 45,
-    columnNumber: 3
-  }, _this);
+    })
+  });
 };
 exports.localCompilationToastMsg = localCompilationToastMsg;
 var sourceVerificationNotAvailableToastMsg = function sourceVerificationNotAvailableToastMsg() {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
       children: "Source verification plugin not activated or not available."
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 52,
-      columnNumber: 5
-    }, _this), " continuing ", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+    }), " continuing ", /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
       children: "without"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 52,
-      columnNumber: 82
-    }, _this), " source code debugging."]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 51,
-    columnNumber: 3
-  }, _this);
+    }), " source code debugging."]
+  });
 };
 exports.sourceVerificationNotAvailableToastMsg = sourceVerificationNotAvailableToastMsg;
 var envChangeNotification = function envChangeNotification(env, from) {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
       className: "fas fa-exclamation-triangle text-danger mr-1"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 58,
-      columnNumber: 5
-    }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
-      children: [from + ' ', /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("span", {
+      children: [from + ' ', /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
         className: "font-weight-bold text-warning",
         children: "set your environment to"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 61,
-        columnNumber: 7
-      }, _this), " ", env && env.context]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 59,
-      columnNumber: 5
-    }, _this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 57,
-    columnNumber: 3
-  }, _this);
+      }), " ", env && env.context]
+    })]
+  });
 };
 exports.envChangeNotification = envChangeNotification;
 var storageFullMessage = function storageFullMessage() {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
       className: "fas fa-exclamation-triangle text-danger mr-1"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 68,
-      columnNumber: 5
-    }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
       className: "font-weight-bold",
-      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
         children: "Cannot save this file due to full LocalStorage. Backup existing files and free up some space."
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 70,
-        columnNumber: 7
-      }, _this)
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 69,
-      columnNumber: 5
-    }, _this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 67,
-    columnNumber: 3
-  }, _this);
+      })
+    })]
+  });
 };
 exports.storageFullMessage = storageFullMessage;
 var recursivePasteToastMsg = function recursivePasteToastMsg() {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
     children: "File(s) to paste is an ancestor of the destination folder"
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 75,
-    columnNumber: 45
-  }, _this);
+  });
 };
 exports.recursivePasteToastMsg = recursivePasteToastMsg;
 var logBuilder = function logBuilder(msg) {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("pre", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("pre", {
     children: msg
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 78,
-    columnNumber: 10
-  }, _this);
+  });
 };
 exports.logBuilder = logBuilder;
 var cancelProxyMsg = function cancelProxyMsg() {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
       children: "Proxy deployment cancelled."
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 83,
-      columnNumber: 5
-    }, _this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 82,
-    columnNumber: 3
-  }, _this);
+    })
+  });
 };
 exports.cancelProxyMsg = cancelProxyMsg;
 var cancelUpgradeMsg = function cancelUpgradeMsg() {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
       children: "Upgrade with proxy cancelled."
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 89,
-      columnNumber: 5
-    }, _this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 88,
-    columnNumber: 3
-  }, _this);
+    })
+  });
 };
 exports.cancelUpgradeMsg = cancelUpgradeMsg;
 var deployWithProxyMsg = function deployWithProxyMsg() {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
       children: "Deploy with Proxy"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 95,
-      columnNumber: 5
-    }, _this), " will initiate two (2) transactions:", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("ol", {
+    }), " will initiate two (2) transactions:", /*#__PURE__*/(0, _jsxRuntime.jsxs)("ol", {
       className: "pl-3",
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("li", {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("li", {
         children: "Deploying the implementation contract"
-      }, "impl-contract", false, {
-        fileName: _jsxFileName,
-        lineNumber: 97,
-        columnNumber: 7
-      }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("li", {
+      }, "impl-contract"), /*#__PURE__*/(0, _jsxRuntime.jsx)("li", {
         children: "Deploying an ERC1967 proxy contract"
-      }, "proxy-contract", false, {
-        fileName: _jsxFileName,
-        lineNumber: 98,
-        columnNumber: 7
-      }, _this)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 96,
-      columnNumber: 5
-    }, _this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 94,
-    columnNumber: 3
-  }, _this);
+      }, "proxy-contract")]
+    })]
+  });
 };
 exports.deployWithProxyMsg = deployWithProxyMsg;
 var upgradeWithProxyMsg = function upgradeWithProxyMsg() {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
       children: "Upgrade with Proxy"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 105,
-      columnNumber: 5
-    }, _this), " will initiate two (2) transactions:", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("ol", {
+    }), " will initiate two (2) transactions:", /*#__PURE__*/(0, _jsxRuntime.jsxs)("ol", {
       className: "pl-3",
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("li", {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("li", {
         children: "Deploying the new implementation contract"
-      }, "new-impl-contract", false, {
-        fileName: _jsxFileName,
-        lineNumber: 107,
-        columnNumber: 7
-      }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("li", {
+      }, "new-impl-contract"), /*#__PURE__*/(0, _jsxRuntime.jsx)("li", {
         children: "Updating the proxy contract with the address of the new implementation contract"
-      }, "update-proxy-contract", false, {
-        fileName: _jsxFileName,
-        lineNumber: 108,
-        columnNumber: 7
-      }, _this)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 106,
-      columnNumber: 5
-    }, _this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 104,
-    columnNumber: 3
-  }, _this);
+      }, "update-proxy-contract")]
+    })]
+  });
 };
 exports.upgradeWithProxyMsg = upgradeWithProxyMsg;
 var unavailableProxyLayoutMsg = function unavailableProxyLayoutMsg() {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
-      children: ["The previous contract implementation is NOT available for an upgrade comparison", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 117,
-        columnNumber: 7
-      }, _this), " A new storage layout will be saved for future upgrades."]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 115,
-      columnNumber: 5
-    }, _this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 114,
-    columnNumber: 3
-  }, _this);
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("p", {
+      children: ["The previous contract implementation is NOT available for an upgrade comparison", /*#__PURE__*/(0, _jsxRuntime.jsx)("br", {}), " A new storage layout will be saved for future upgrades."]
+    })
+  });
 };
 exports.unavailableProxyLayoutMsg = unavailableProxyLayoutMsg;
 var upgradeReportMsg = function upgradeReportMsg(report) {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
       className: "py-2 ml-2 mb-1 align-self-end mb-2 d-flex",
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
         className: "align-self-center pl-4 mt-1",
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
           className: "pr-2 text-warning far fa-exclamation-triangle",
           "aria-hidden": "true",
           style: {
             fontSize: 'xxx-large',
             fontWeight: 'lighter'
           }
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 126,
-          columnNumber: 9
-        }, _this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 125,
-        columnNumber: 7
-      }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        })
+      }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
         className: "d-flex flex-column",
-        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
           className: "pl-4 mt-1",
           children: "The storage layout of new implementation is NOT"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 129,
-          columnNumber: 9
-        }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
           className: "pl-4 mt-1",
           children: "compatible with the previous implementation."
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 130,
-          columnNumber: 9
-        }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
           className: "pl-4 mt-1",
           children: "Your contract's storage may be partially or fully erased!"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 131,
-          columnNumber: 9
-        }, _this)]
-      }, void 0, true, {
-        fileName: _jsxFileName,
-        lineNumber: 128,
-        columnNumber: 7
-      }, _this)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 124,
-      columnNumber: 5
-    }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        })]
+      })]
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
       className: "pl-4 text-danger",
       children: report.explain()
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 134,
-      columnNumber: 5
-    }, _this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 123,
-    columnNumber: 3
-  }, _this);
+    })]
+  });
 };
 exports.upgradeReportMsg = upgradeReportMsg;
 function RenderIf(_ref) {
@@ -3250,7 +2603,7 @@ __webpack_require__.r(__webpack_exports__);
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ __webpack_require__.O(0, ["vendor"], () => (__webpack_exec__(2002)));
+/******/ __webpack_require__.O(0, [736], () => (__webpack_exec__(2002)));
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);

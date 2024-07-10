@@ -1,4 +1,4 @@
-(self["webpackChunk"] = self["webpackChunk"] || []).push([["main"],{
+(self["webpackChunk"] = self["webpackChunk"] || []).push([[179],{
 
 /***/ 1753:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
@@ -18,9 +18,7 @@ var _slicedToArray2 = _interopRequireDefault(__webpack_require__(7794));
 var _react = _interopRequireWildcard(__webpack_require__(7182));
 __webpack_require__(661);
 var _docgenClient = __webpack_require__(7883);
-var _jsxDevRuntime = __webpack_require__(6872);
-var _jsxFileName = "/workspaces/remix-project/apps/doc-gen/src/app/App.tsx",
-  _this = void 0;
+var _jsxRuntime = __webpack_require__(7659);
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 var client = new _docgenClient.DocGenClient();
@@ -67,44 +65,24 @@ var App = function App() {
     }();
     watchThemeSwitch();
   }, []);
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
     className: "p-3",
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("h5", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h5", {
       className: "h-5 mb-3",
       children: "Compile a Solidity contract and generate its documentation as Markdown. (Right-click on a contract in the File Explorer and select \"Generate Docs\" from the context menu.)."
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 7
-    }, _this), fileName && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+    }), fileName && /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
       className: "border-bottom border-top px-2 py-3 justify-center align-items-center d-flex",
-      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("h6", {
+      children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("h6", {
         children: ["File: ", fileName]
-      }, void 0, true, {
-        fileName: _jsxFileName,
-        lineNumber: 37,
-        columnNumber: 11
-      }, _this)
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 36,
-      columnNumber: 9
-    }, _this), hasBuild && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("button", {
+      })
+    }), hasBuild && /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
       className: "btn btn-primary btn-block mt-4",
       onClick: function onClick() {
         return client.generateDocs();
       },
       children: "Generate Docs"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 9
-    }, _this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 30,
-    columnNumber: 5
-  }, _this);
+    })]
+  });
 };
 var _default = App;
 exports["default"] = _default;
@@ -1777,7 +1755,7 @@ function normalizeContractPath(contractPath) {
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
-/* provided dependency */ var Buffer = __webpack_require__(144)["Buffer"];
+/* provided dependency */ var Buffer = __webpack_require__(144)["lW"];
 
 
 var _interopRequireDefault = __webpack_require__(7085);
@@ -1956,21 +1934,12 @@ var _interopRequireDefault = __webpack_require__(7085);
 var _react = _interopRequireDefault(__webpack_require__(7182));
 var _client = __webpack_require__(8244);
 var _App = _interopRequireDefault(__webpack_require__(1753));
-var _jsxDevRuntime = __webpack_require__(6872);
-var _jsxFileName = "/workspaces/remix-project/apps/doc-gen/src/main.tsx";
+var _jsxRuntime = __webpack_require__(7659);
 var container = document.getElementById('root');
 if (container) {
-  (0, _client.createRoot)(container).render( /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_react["default"].StrictMode, {
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_App["default"], {}, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 5
-    }, void 0)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 32
-  }, void 0));
+  (0, _client.createRoot)(container).render( /*#__PURE__*/(0, _jsxRuntime.jsx)(_react["default"].StrictMode, {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_App["default"], {})
+  }));
 }
 
 /***/ }),
@@ -2097,7 +2066,7 @@ module.exports = "{{>common}}\n";
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ __webpack_require__.O(0, ["vendor"], () => (__webpack_exec__(2002)));
+/******/ __webpack_require__.O(0, [736], () => (__webpack_exec__(2002)));
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);

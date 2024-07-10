@@ -1,4 +1,4 @@
-(self["webpackChunk"] = self["webpackChunk"] || []).push([["main"],{
+(self["webpackChunk"] = self["webpackChunk"] || []).push([[179],{
 
 /***/ 53373:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
@@ -161,8 +161,7 @@ var _contexts = __webpack_require__(42768);
 var _state = __webpack_require__(79840);
 var _circomPluginClient = __webpack_require__(18646);
 var _actions = __webpack_require__(53373);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/circuit-compiler/src/app/app.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 var plugin = new _circomPluginClient.CircomPluginClient();
@@ -430,40 +429,20 @@ function App() {
     dispatch: dispatch,
     plugin: plugin
   };
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
     className: "circuit_compiler_app",
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIf, {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIf, {
       condition: locale.messages,
-      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactIntl.IntlProvider, {
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactIntl.IntlProvider, {
         locale: locale.code,
         messages: locale.messages,
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_contexts.CircuitAppContext.Provider, {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_contexts.CircuitAppContext.Provider, {
           value: value,
-          children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_container.Container, {}, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 138,
-            columnNumber: 13
-          }, this)
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 137,
-          columnNumber: 11
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 136,
-        columnNumber: 9
-      }, this)
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 135,
-      columnNumber: 7
-    }, this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 134,
-    columnNumber: 5
-  }, this);
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_container.Container, {})
+        })
+      })
+    })
+  });
 }
 var _default = App;
 exports["default"] = _default;
@@ -482,25 +461,12 @@ Object.defineProperty(exports, "__esModule", ({
 exports.CircuitActions = CircuitActions;
 var _compileBtn = __webpack_require__(94528);
 var _r1csBtn = __webpack_require__(36115);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/circuit-compiler/src/app/components/actions.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function CircuitActions() {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
     className: "pb-3",
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_compileBtn.CompileBtn, {}, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 7
-    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_r1csBtn.R1CSBtn, {}, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 8,
-      columnNumber: 7
-    }, this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 6,
-    columnNumber: 5
-  }, this);
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_compileBtn.CompileBtn, {}), /*#__PURE__*/(0, _jsxRuntime.jsx)(_r1csBtn.R1CSBtn, {})]
+  });
 }
 
 /***/ }),
@@ -520,136 +486,67 @@ var _react = __webpack_require__(47182);
 var _contexts = __webpack_require__(42768);
 var _reactIntl = __webpack_require__(24831);
 var _actions = __webpack_require__(53373);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/circuit-compiler/src/app/components/compileBtn.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function CompileBtn() {
   var _useContext = (0, _react.useContext)(_contexts.CircuitAppContext),
     plugin = _useContext.plugin,
     appState = _useContext.appState;
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.CustomTooltip, {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.CustomTooltip, {
     placement: "auto",
     tooltipId: "overlay-tooltip-compile",
-    tooltipText: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+    tooltipText: /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
       className: "text-left",
-      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+      children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
           children: "Ctrl+S"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 17,
-          columnNumber: 13
-        }, this), " to compile ", appState.filePath]
-      }, void 0, true, {
-        fileName: _jsxFileName,
-        lineNumber: 16,
-        columnNumber: 11
-      }, this)
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 9
-    }, this),
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("button", {
+        }), " to compile ", appState.filePath]
+      })
+    }),
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
       className: "btn btn-primary btn-block d-block w-100 text-break mb-1 mt-3",
       onClick: function onClick() {
         (0, _actions.compileCircuit)(plugin, appState);
       },
       disabled: appState.filePath === "" || appState.status === "compiling" || appState.status === "generating",
       "data-id": "compile_circuit_btn",
-      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
         className: "d-flex align-items-center justify-content-center",
-        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIf, {
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIf, {
           condition: appState.status === 'compiling',
-          children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
             className: "fas fa-sync fa-spin mr-2",
             "aria-hidden": "true"
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 30,
-            columnNumber: 13
-          }, this)
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 29,
-          columnNumber: 11
-        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIfNot, {
+          })
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIfNot, {
           condition: appState.status === 'compiling',
-          children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
             className: "fas fa-sync mr-2",
             "aria-hidden": "true"
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 33,
-            columnNumber: 13
-          }, this)
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 32,
-          columnNumber: 11
-        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+          })
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
           className: "text-truncate overflow-hidden text-nowrap",
-          children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
-            children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactIntl.FormattedMessage, {
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+            children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactIntl.FormattedMessage, {
               id: "circuit.compile"
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 37,
-              columnNumber: 15
-            }, this)
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 36,
-            columnNumber: 13
-          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+            })
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("span", {
             className: "ml-1 text-nowrap",
-            children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIf, {
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIf, {
               condition: appState.filePath === "",
-              children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactIntl.FormattedMessage, {
+              children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactIntl.FormattedMessage, {
                 id: "circuit.noFileSelected"
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 41,
-                columnNumber: 17
-              }, this)
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 40,
-              columnNumber: 15
-            }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIfNot, {
+              })
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIfNot, {
               condition: appState.filePath === "",
-              children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
+              children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
                 children: (0, _helper.extractNameFromKey)(appState.filePath)
-              }, void 0, false)
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 43,
-              columnNumber: 15
-            }, this)]
-          }, void 0, true, {
-            fileName: _jsxFileName,
-            lineNumber: 39,
-            columnNumber: 13
-          }, this)]
-        }, void 0, true, {
-          fileName: _jsxFileName,
-          lineNumber: 35,
-          columnNumber: 11
-        }, this)]
-      }, void 0, true, {
-        fileName: _jsxFileName,
-        lineNumber: 28,
-        columnNumber: 9
-      }, this)
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 22,
-      columnNumber: 7
-    }, this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 11,
-    columnNumber: 5
-  }, this);
+              })
+            })]
+          })]
+        })]
+      })
+    })
+  });
 }
 
 /***/ }),
@@ -669,8 +566,7 @@ var _slicedToArray2 = _interopRequireDefault(__webpack_require__(15159));
 var _react = __webpack_require__(47182);
 var _reactIntl = __webpack_require__(24831);
 var _helper = __webpack_require__(63878);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/circuit-compiler/src/app/components/configToggler.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function ConfigToggler(_ref) {
   var children = _ref.children;
   var _useState = (0, _react.useState)(false),
@@ -680,90 +576,42 @@ function ConfigToggler(_ref) {
   var toggleConfigurations = function toggleConfigurations() {
     setToggleExpander(!toggleExpander);
   };
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
       className: "d-flex circuit_config_section justify-content-between",
       onClick: toggleConfigurations,
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
         className: "d-flex",
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("label", {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
           className: "mt-1 circuit_config_section",
-          children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactIntl.FormattedMessage, {
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactIntl.FormattedMessage, {
             id: "circuit.advancedConfigurations"
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 17,
-            columnNumber: 13
-          }, this)
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 16,
-          columnNumber: 11
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 15,
-        columnNumber: 9
-      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+          })
+        })
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("span", {
           "data-id": "scConfigExpander",
           onClick: toggleConfigurations,
-          children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIf, {
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIf, {
             condition: toggleExpander,
-            children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+            children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
               className: "fas fa-angle-down",
               "aria-hidden": "true"
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 23,
-              columnNumber: 15
-            }, this)
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 22,
-            columnNumber: 13
-          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIfNot, {
+            })
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIfNot, {
             condition: toggleExpander,
-            children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+            children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
               className: "fas fa-angle-right",
               "aria-hidden": "true"
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 26,
-              columnNumber: 15
-            }, this)
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 25,
-            columnNumber: 13
-          }, this)]
-        }, void 0, true, {
-          fileName: _jsxFileName,
-          lineNumber: 21,
-          columnNumber: 11
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 20,
-        columnNumber: 9
-      }, this)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 7
-    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIf, {
+            })
+          })]
+        })
+      })]
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIf, {
       condition: toggleExpander,
       children: children
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 7
-    }, this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 13,
-    columnNumber: 5
-  }, this);
+    })]
+  });
 }
 
 /***/ }),
@@ -780,45 +628,32 @@ Object.defineProperty(exports, "__esModule", ({
 exports.Configurations = Configurations;
 var _helper = __webpack_require__(63878);
 var _reactIntl = __webpack_require__(24831);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/circuit-compiler/src/app/components/configurations.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function Configurations(_ref) {
   var primeValue = _ref.primeValue,
     setPrimeValue = _ref.setPrimeValue,
     versionValue = _ref.versionValue;
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
     className: "pb-2 border-bottom flex-column",
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
       className: "flex-column d-flex",
-      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
         className: "mb-2 ml-0",
-        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("label", {
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
           className: "circuit_inner_label form-check-label",
           htmlFor: "circuitPrimeSelector",
-          children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactIntl.FormattedMessage, {
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactIntl.FormattedMessage, {
             id: "circuit.prime"
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 11,
-            columnNumber: 13
-          }, this)
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 10,
-          columnNumber: 11
-        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.CustomTooltip, {
+          })
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.CustomTooltip, {
           placement: "auto",
           tooltipId: "circuitPrimeLabelTooltip",
           tooltipClasses: "text-nowrap",
-          tooltipText: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+          tooltipText: /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
             children: 'To choose the prime number to use to generate the circuit. Receives the name of the curve (bn128, bls12381, goldilocks, grumpkin, pallas, vesta)'
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 17,
-            columnNumber: 26
-          }, this),
-          children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-            children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("select", {
+          }),
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+            children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("select", {
               onChange: function onChange(e) {
                 return setPrimeValue(e.target.value);
               },
@@ -827,227 +662,99 @@ function Configurations(_ref) {
               style: {
                 pointerEvents: 'auto'
               },
-              children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIf, {
+              children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIf, {
                 condition: versionValue === '2.1.5',
-                children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
-                  children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("option", {
+                children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+                  children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
                     value: "bn128",
                     children: "bn128"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 30,
-                    columnNumber: 21
-                  }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("option", {
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
                     value: "bls12381",
                     children: "bls12381"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 31,
-                    columnNumber: 21
-                  }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("option", {
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
                     value: "goldilocks",
                     children: "goldilocks"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 32,
-                    columnNumber: 21
-                  }, this)]
-                }, void 0, true)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 28,
-                columnNumber: 17
-              }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIf, {
+                  })]
+                })
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIf, {
                 condition: versionValue === '2.1.6',
-                children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
-                  children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("option", {
+                children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+                  children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
                     value: "bn128",
                     children: "bn128"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 37,
-                    columnNumber: 21
-                  }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("option", {
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
                     value: "bls12381",
                     children: "bls12381"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 38,
-                    columnNumber: 21
-                  }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("option", {
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
                     value: "goldilocks",
                     children: "goldilocks"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 39,
-                    columnNumber: 21
-                  }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("option", {
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
                     value: "grumpkin",
                     children: "grumpkin"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 40,
-                    columnNumber: 21
-                  }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("option", {
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
                     value: "pallas",
                     children: "pallas"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 41,
-                    columnNumber: 21
-                  }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("option", {
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
                     value: "vesta",
                     children: "vesta"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 42,
-                    columnNumber: 21
-                  }, this)]
-                }, void 0, true)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 35,
-                columnNumber: 17
-              }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIf, {
+                  })]
+                })
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIf, {
                 condition: versionValue === '2.1.7',
-                children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
-                  children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("option", {
+                children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+                  children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
                     value: "bn128",
                     children: "bn128"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 47,
-                    columnNumber: 21
-                  }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("option", {
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
                     value: "bls12381",
                     children: "bls12381"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 48,
-                    columnNumber: 21
-                  }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("option", {
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
                     value: "goldilocks",
                     children: "goldilocks"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 49,
-                    columnNumber: 21
-                  }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("option", {
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
                     value: "grumpkin",
                     children: "grumpkin"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 50,
-                    columnNumber: 21
-                  }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("option", {
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
                     value: "pallas",
                     children: "pallas"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 51,
-                    columnNumber: 21
-                  }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("option", {
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
                     value: "vesta",
                     children: "vesta"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 52,
-                    columnNumber: 21
-                  }, this)]
-                }, void 0, true)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 45,
-                columnNumber: 17
-              }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIf, {
+                  })]
+                })
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIf, {
                 condition: versionValue === '2.1.8',
-                children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
-                  children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("option", {
+                children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+                  children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
                     value: "bn128",
                     children: "bn128"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 57,
-                    columnNumber: 21
-                  }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("option", {
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
                     value: "bls12381",
                     children: "bls12381"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 58,
-                    columnNumber: 21
-                  }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("option", {
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
                     value: "goldilocks",
                     children: "goldilocks"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 59,
-                    columnNumber: 21
-                  }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("option", {
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
                     value: "grumpkin",
                     children: "grumpkin"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 60,
-                    columnNumber: 21
-                  }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("option", {
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
                     value: "pallas",
                     children: "pallas"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 61,
-                    columnNumber: 21
-                  }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("option", {
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
                     value: "vesta",
                     children: "vesta"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 62,
-                    columnNumber: 21
-                  }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("option", {
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
                     value: "secq256r1",
                     children: "secq256r1"
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 63,
-                    columnNumber: 21
-                  }, this)]
-                }, void 0, true)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 55,
-                columnNumber: 17
-              }, this)]
-            }, void 0, true, {
-              fileName: _jsxFileName,
-              lineNumber: 20,
-              columnNumber: 15
-            }, this)
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 19,
-            columnNumber: 13
-          }, this)
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 13,
-          columnNumber: 11
-        }, this)]
-      }, void 0, true, {
-        fileName: _jsxFileName,
-        lineNumber: 9,
-        columnNumber: 9
-      }, this)
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 8,
-      columnNumber: 7
-    }, this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 7,
-    columnNumber: 5
-  }, this);
+                  })]
+                })
+              })]
+            })
+          })
+        })]
+      })
+    })
+  });
 }
 
 /***/ }),
@@ -1077,8 +784,7 @@ var _actions = __webpack_require__(91934);
 var _witnessToggler = __webpack_require__(43503);
 var _witness = __webpack_require__(4590);
 var _feedback = __webpack_require__(39692);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/circuit-compiler/src/app/components/container.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function Container() {
   var circuitApp = (0, _react.useContext)(_contexts.CircuitAppContext);
   var showCompilerLicense = /*#__PURE__*/function () {
@@ -1250,138 +956,66 @@ function Container() {
       return _ref3.apply(this, arguments);
     };
   }();
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("section", {
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("article", {
-      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("section", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("article", {
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
         className: "pt-0 circuit_section",
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
           className: "mb-1",
-          children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("label", {
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
             className: "circuit_label form-check-label",
-            children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactIntl.FormattedMessage, {
+            children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactIntl.FormattedMessage, {
               id: "circuit.compiler"
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 104,
-              columnNumber: 15
-            }, this)
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 103,
-            columnNumber: 13
-          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.CustomTooltip, {
+            })
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.CustomTooltip, {
             placement: "bottom",
             tooltipId: "showCircumCompilerTooltip",
             tooltipClasses: "text-nowrap",
             tooltipText: "See compiler license",
-            children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+            children: /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
               className: "far fa-file-certificate border-0 p-0 ml-2",
               onClick: function onClick() {
                 return showCompilerLicense();
               }
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 112,
-              columnNumber: 15
-            }, this)
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 106,
-            columnNumber: 13
-          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_versions.VersionList, {
+            })
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_versions.VersionList, {
             setVersion: handleVersionSelect,
             versionList: circuitApp.appState.versionList,
             currentVersion: circuitApp.appState.version
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 114,
-            columnNumber: 13
-          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_options.CompileOptions, {
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_options.CompileOptions, {
             setCircuitAutoCompile: handleCircuitAutoCompile,
             setCircuitHideWarnings: handleCircuitHideWarnings,
             autoCompile: circuitApp.appState.autoCompile,
             hideWarnings: circuitApp.appState.hideWarnings
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 115,
-            columnNumber: 13
-          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_configToggler.ConfigToggler, {
-            children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_configurations.Configurations, {
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_configToggler.ConfigToggler, {
+            children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_configurations.Configurations, {
               setPrimeValue: handlePrimeChange,
               primeValue: circuitApp.appState.primeValue,
               versionValue: circuitApp.appState.version
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 117,
-              columnNumber: 15
-            }, this)
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 116,
-            columnNumber: 13
-          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_actions.CircuitActions, {}, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 119,
-            columnNumber: 13
-          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIf, {
+            })
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_actions.CircuitActions, {}), /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIf, {
             condition: circuitApp.appState.signalInputs.length > 0,
-            children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_witnessToggler.WitnessToggler, {
-              children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_witness.WitnessSection, {
+            children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_witnessToggler.WitnessToggler, {
+              children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_witness.WitnessSection, {
                 plugin: circuitApp.plugin,
                 signalInputs: circuitApp.appState.signalInputs,
                 status: circuitApp.appState.status
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 122,
-                columnNumber: 17
-              }, this)
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 121,
-              columnNumber: 15
-            }, this)
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 120,
-            columnNumber: 13
-          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIf, {
+              })
+            })
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIf, {
             condition: circuitApp.appState.status !== 'compiling' && circuitApp.appState.status !== 'computing' && circuitApp.appState.status !== 'generating',
-            children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_feedback.CompilerFeedback, {
+            children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_feedback.CompilerFeedback, {
               feedback: circuitApp.appState.feedback,
               filePathToId: circuitApp.appState.filePathToId,
               openErrorLocation: handleOpenErrorLocation,
               hideWarnings: circuitApp.appState.hideWarnings,
               askGPT: askGPT
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 126,
-              columnNumber: 15
-            }, this)
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 125,
-            columnNumber: 13
-          }, this)]
-        }, void 0, true, {
-          fileName: _jsxFileName,
-          lineNumber: 102,
-          columnNumber: 11
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 101,
-        columnNumber: 9
-      }, this)
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 100,
-      columnNumber: 7
-    }, this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 99,
-    columnNumber: 5
-  }, this);
+            })
+          })]
+        })
+      })
+    })
+  });
 }
 
 /***/ }),
@@ -1402,10 +1036,8 @@ var _react = __webpack_require__(47182);
 var _helper = __webpack_require__(63878);
 var _clipboard = __webpack_require__(29539);
 var _feedbackAlert = __webpack_require__(97112);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/circuit-compiler/src/app/components/feedback.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function CompilerFeedback(_ref) {
-  var _this = this;
   var feedback = _ref.feedback,
     filePathToId = _ref.filePathToId,
     hideWarnings = _ref.hideWarnings,
@@ -1426,148 +1058,76 @@ function CompilerFeedback(_ref) {
   var handleAskGPT = function handleAskGPT(report) {
     askGPT(report);
   };
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
       className: "circuit_errors_box py-4",
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIf, {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIf, {
         condition: typeof feedback === "string" && showException,
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
           className: "circuit_feedback error alert alert-danger",
           "data-id": "circuit_feedback",
-          children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
-            children: [" ", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("span", {
+            children: [" ", /*#__PURE__*/(0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
               children: feedback
-            }, void 0, false), " "]
-          }, void 0, true, {
-            fileName: _jsxFileName,
-            lineNumber: 29,
-            columnNumber: 13
-          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+            }), " "]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
             className: "close",
             "data-id": "renderer",
             onClick: handleCloseException,
-            children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+            children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
               className: "fas fa-times"
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 31,
-              columnNumber: 15
-            }, this)
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 30,
-            columnNumber: 13
-          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+            })
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
             className: "d-flex pt-1 flex-row-reverse",
-            children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+            children: /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
               className: "ml-3 pt-1 py-1",
-              children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_clipboard.CopyToClipboard, {
+              children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_clipboard.CopyToClipboard, {
                 content: feedback,
                 className: "p-0 m-0 far fa-copy error",
                 direction: 'top'
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 35,
-                columnNumber: 17
-              }, this)
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 34,
-              columnNumber: 15
-            }, this)
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 33,
-            columnNumber: 13
-          }, this)]
-        }, void 0, true, {
-          fileName: _jsxFileName,
-          lineNumber: 28,
-          columnNumber: 11
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 27,
-        columnNumber: 9
-      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIf, {
+              })
+            })
+          })]
+        })
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIf, {
         condition: Array.isArray(feedback),
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
           children: Array.isArray(feedback) && feedback.map(function (response, index) {
-            return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+            return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
               onClick: function onClick() {
                 return handleOpenError(response);
               },
-              children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIf, {
+              children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIf, {
                 condition: response.type === 'Error',
-                children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+                children: /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
                   className: "circuit_feedback ".concat(response.type.toLowerCase(), " alert alert-danger"),
                   "data-id": "circuit_feedback",
-                  children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_feedbackAlert.FeedbackAlert, {
+                  children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_feedbackAlert.FeedbackAlert, {
                     message: response.message + (response.labels[0] ? ": " + response.labels[0].message + " ".concat(filePathToId[response.labels[0].file_id], ":").concat(response.labels[0].range.start, ":").concat(response.labels[0].range.end) : ''),
                     askGPT: function askGPT() {
                       return handleAskGPT(response);
                     }
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 47,
-                    columnNumber: 23
-                  }, _this)
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 46,
-                  columnNumber: 21
-                }, _this)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 45,
-                columnNumber: 19
-              }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIf, {
+                  })
+                })
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIf, {
                 condition: response.type === 'Warning' && !hideWarnings,
-                children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+                children: /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
                   className: "circuit_feedback ".concat(response.type.toLowerCase(), " alert alert-warning"),
                   "data-id": "circuit_feedback",
-                  children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_feedbackAlert.FeedbackAlert, {
+                  children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_feedbackAlert.FeedbackAlert, {
                     message: response.message,
                     askGPT: function askGPT() {
                       handleAskGPT(response);
                     }
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 54,
-                    columnNumber: 23
-                  }, _this)
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 53,
-                  columnNumber: 21
-                }, _this)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 52,
-                columnNumber: 19
-              }, _this)]
-            }, index, true, {
-              fileName: _jsxFileName,
-              lineNumber: 44,
-              columnNumber: 17
-            }, _this);
+                  })
+                })
+              })]
+            }, index);
           })
-        }, void 0, false)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 40,
-        columnNumber: 9
-      }, this)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 26,
-      columnNumber: 7
-    }, this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 25,
-    columnNumber: 5
-  }, this);
+        })
+      })]
+    })
+  });
 }
 
 /***/ }),
@@ -1587,8 +1147,7 @@ var _slicedToArray2 = _interopRequireDefault(__webpack_require__(15159));
 var _react = __webpack_require__(47182);
 var _helper = __webpack_require__(63878);
 var _clipboard = __webpack_require__(29539);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/circuit-compiler/src/app/components/feedbackAlert.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function FeedbackAlert(_ref) {
   var message = _ref.message,
     askGPT = _ref.askGPT;
@@ -1599,70 +1158,38 @@ function FeedbackAlert(_ref) {
   var handleCloseAlert = function handleCloseAlert() {
     setShowAlert(false);
   };
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIf, {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIf, {
     condition: showAlert,
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("span", {
         children: [" ", message, " "]
-      }, void 0, true, {
-        fileName: _jsxFileName,
-        lineNumber: 16,
-        columnNumber: 9
-      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
         className: "close",
         "data-id": "renderer",
         onClick: handleCloseAlert,
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
           className: "fas fa-times"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 18,
-          columnNumber: 11
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 17,
-        columnNumber: 9
-      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        })
+      }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
         className: "d-flex pt-1 flex-row-reverse",
-        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
           className: "ml-3 pt-1 py-1",
-          children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_clipboard.CopyToClipboard, {
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_clipboard.CopyToClipboard, {
             content: message,
             className: "p-0 m-0 far fa-copy error",
             direction: 'top'
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 22,
-            columnNumber: 13
-          }, this)
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 21,
-          columnNumber: 11
-        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+          })
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
           className: "border border-success text-success btn-sm",
           onClick: function onClick(e) {
             e.stopPropagation();
             askGPT();
           },
           children: "Ask RemixAI"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 24,
-          columnNumber: 11
-        }, this)]
-      }, void 0, true, {
-        fileName: _jsxFileName,
-        lineNumber: 20,
-        columnNumber: 9
-      }, this)]
-    }, void 0, true)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 14,
-    columnNumber: 5
-  }, this);
+        })]
+      })]
+    })
+  });
 }
 
 /***/ }),
@@ -1678,18 +1205,17 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports.CompileOptions = CompileOptions;
 var _reactIntl = __webpack_require__(24831);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/circuit-compiler/src/app/components/options.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function CompileOptions(_ref) {
   var autoCompile = _ref.autoCompile,
     hideWarnings = _ref.hideWarnings,
     setCircuitAutoCompile = _ref.setCircuitAutoCompile,
     setCircuitHideWarnings = _ref.setCircuitHideWarnings;
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
     className: "pb-2",
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
       className: "mt-2 custom-control custom-checkbox",
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("input", {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
         className: "custom-control-input",
         type: "checkbox",
         onChange: function onChange(e) {
@@ -1698,33 +1224,17 @@ function CompileOptions(_ref) {
         title: "Auto compile",
         checked: autoCompile,
         id: "autoCompileCircuit"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 9,
-        columnNumber: 9
-      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("label", {
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
         className: "form-check-label custom-control-label",
         htmlFor: "autoCompileCircuit",
         "data-id": "auto_compile_circuit_checkbox_input",
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactIntl.FormattedMessage, {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactIntl.FormattedMessage, {
           id: "circuit.autoCompile"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 18,
-          columnNumber: 11
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 17,
-        columnNumber: 9
-      }, this)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 8,
-      columnNumber: 7
-    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        })
+      })]
+    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
       className: "mt-1 mb-2 circuit_warnings_box custom-control custom-checkbox",
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("input", {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
         className: "custom-control-input",
         onChange: function onChange(e) {
           return setCircuitHideWarnings(e.target.checked);
@@ -1733,36 +1243,16 @@ function CompileOptions(_ref) {
         type: "checkbox",
         title: "Hide warnings",
         checked: hideWarnings
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 22,
-        columnNumber: 9
-      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("label", {
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
         className: "form-check-label custom-control-label",
         htmlFor: "hideCircuitWarnings",
         "data-id": "hide_circuit_warnings_checkbox_input",
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactIntl.FormattedMessage, {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactIntl.FormattedMessage, {
           id: "solidity.hideWarnings"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 31,
-          columnNumber: 11
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 30,
-        columnNumber: 9
-      }, this)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 7
-    }, this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 7,
-    columnNumber: 5
-  }, this);
+        })
+      })]
+    })]
+  });
 }
 
 /***/ }),
@@ -1782,101 +1272,52 @@ var _react = __webpack_require__(47182);
 var _contexts = __webpack_require__(42768);
 var _reactIntl = __webpack_require__(24831);
 var _actions = __webpack_require__(53373);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/circuit-compiler/src/app/components/r1csBtn.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function R1CSBtn() {
   var _useContext = (0, _react.useContext)(_contexts.CircuitAppContext),
     plugin = _useContext.plugin,
     appState = _useContext.appState;
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("button", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
     className: "btn btn-secondary btn-block d-block w-100 text-break mb-1 mt-2",
     onClick: function onClick() {
       (0, _actions.generateR1cs)(plugin, appState);
     },
     disabled: appState.filePath === "" || appState.status === "compiling" || appState.status === "generating" || appState.status === "computing",
     "data-id": "generate_r1cs_btn",
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.CustomTooltip, {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.CustomTooltip, {
       placement: "auto",
       tooltipId: "overlay-tooltip-compile",
-      tooltipText: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      tooltipText: /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
         className: "text-left",
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
           children: "Outputs the constraints in r1cs format"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 22,
-          columnNumber: 13
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 21,
-        columnNumber: 11
-      }, this),
-      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        })
+      }),
+      children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
         className: "d-flex align-items-center justify-content-center",
-        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIf, {
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIf, {
           condition: appState.status === 'generating',
-          children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
             className: "fas fa-sync fa-spin mr-2",
             "aria-hidden": "true"
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 30,
-            columnNumber: 13
-          }, this)
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 29,
-          columnNumber: 11
-        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIfNot, {
+          })
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIfNot, {
           condition: appState.status === 'generating',
-          children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
             className: "fas fa-sync mr-2",
             "aria-hidden": "true"
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 33,
-            columnNumber: 13
-          }, this)
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 32,
-          columnNumber: 11
-        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+          })
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
           className: "text-truncate overflow-hidden text-nowrap",
-          children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
-            children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactIntl.FormattedMessage, {
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+            children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactIntl.FormattedMessage, {
               id: "circuit.generateR1cs"
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 37,
-              columnNumber: 15
-            }, this)
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 36,
-            columnNumber: 13
-          }, this)
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 35,
-          columnNumber: 11
-        }, this)]
-      }, void 0, true, {
-        fileName: _jsxFileName,
-        lineNumber: 28,
-        columnNumber: 9
-      }, this)
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 7
-    }, this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 11,
-    columnNumber: 5
-  }, this);
+            })
+          })
+        })]
+      })
+    })
+  });
 }
 
 /***/ }),
@@ -1892,44 +1333,30 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports.VersionList = VersionList;
 var _helper = __webpack_require__(63878);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/circuit-compiler/src/app/components/versions.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function VersionList(_ref) {
-  var _this = this;
   var currentVersion = _ref.currentVersion,
     versionList = _ref.versionList,
     setVersion = _ref.setVersion;
   var versionListKeys = Object.keys(versionList);
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("select", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("select", {
     value: currentVersion,
     onChange: function onChange(e) {
       return setVersion(e.target.value);
     },
     className: "custom-select",
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIf, {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIf, {
       condition: versionListKeys.length > 0,
-      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
         children: versionListKeys.map(function (version, index) {
-          return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("option", {
+          return /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
             value: version,
             children: versionList[version].name
-          }, index, false, {
-            fileName: _jsxFileName,
-            lineNumber: 17,
-            columnNumber: 15
-          }, _this);
+          }, index);
         })
-      }, void 0, false)
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 7
-    }, this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 5
-  }, this);
+      })
+    })
+  });
 }
 
 /***/ }),
@@ -1953,12 +1380,10 @@ var _reactIntl = __webpack_require__(24831);
 var _actions = __webpack_require__(53373);
 var _react = __webpack_require__(47182);
 var remixLib = _interopRequireWildcard(__webpack_require__(37559));
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/circuit-compiler/src/app/components/witness.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 function WitnessSection(_ref) {
-  var _this = this;
   var plugin = _ref.plugin,
     signalInputs = _ref.signalInputs,
     status = _ref.status;
@@ -1985,109 +1410,57 @@ function WitnessSection(_ref) {
     }
     setWitnessValues(Object.assign({}, witnessValues, (0, _defineProperty2["default"])({}, e.target.name, value[0])));
   };
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
     className: "pb-2 border-bottom flex-column",
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
       className: "flex-column d-flex",
-      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIf, {
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIf, {
         condition: signalInputs.length > 0,
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
           children: [signalInputs.map(function (input, index) {
-            return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+            return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
               className: "mb-2 ml-0",
-              children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("label", {
+              children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("label", {
                 className: "circuit_inner_label form-check-label",
                 htmlFor: "circuitPrimeSelector",
-                children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactIntl.FormattedMessage, {
+                children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_reactIntl.FormattedMessage, {
                   id: "circuit.signalInput"
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 45,
-                  columnNumber: 21
-                }, _this), " ", input]
-              }, void 0, true, {
-                fileName: _jsxFileName,
-                lineNumber: 44,
-                columnNumber: 19
-              }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("input", {
+                }), " ", input]
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
                 className: "form-control m-0 txinput",
                 placeholder: input,
                 name: input,
                 onChange: handleSignalInput,
                 "data-id": "circuit_input_".concat(input)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 47,
-                columnNumber: 19
-              }, _this)]
-            }, index, true, {
-              fileName: _jsxFileName,
-              lineNumber: 43,
-              columnNumber: 17
-            }, _this);
-          }), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("button", {
+              })]
+            }, index);
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("button", {
             className: "btn btn-sm btn-secondary",
             onClick: function onClick() {
               (0, _actions.computeWitness)(plugin, status, witnessValues);
             },
             disabled: status === "compiling" || status === "generating" || status === "computing",
             "data-id": "compute_witness_btn",
-            children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIf, {
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIf, {
               condition: status === 'computing',
-              children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+              children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
                 className: "fas fa-sync fa-spin mr-2",
                 "aria-hidden": "true"
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 58,
-                columnNumber: 17
-              }, this)
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 57,
-              columnNumber: 15
-            }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIfNot, {
+              })
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIfNot, {
               condition: status === 'computing',
-              children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+              children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
                 className: "fas fa-sync mr-2",
                 "aria-hidden": "true"
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 61,
-                columnNumber: 17
-              }, this)
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 60,
-              columnNumber: 15
-            }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactIntl.FormattedMessage, {
+              })
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactIntl.FormattedMessage, {
               id: "circuit.compute"
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 63,
-              columnNumber: 15
-            }, this)]
-          }, void 0, true, {
-            fileName: _jsxFileName,
-            lineNumber: 51,
-            columnNumber: 13
-          }, this)]
-        }, void 0, true)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 39,
-        columnNumber: 9
-      }, this)
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 38,
-      columnNumber: 7
-    }, this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 37,
-    columnNumber: 5
-  }, this);
+            })]
+          })]
+        })
+      })
+    })
+  });
 }
 
 /***/ }),
@@ -2107,8 +1480,7 @@ var _slicedToArray2 = _interopRequireDefault(__webpack_require__(15159));
 var _react = __webpack_require__(47182);
 var _reactIntl = __webpack_require__(24831);
 var _helper = __webpack_require__(63878);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/circuit-compiler/src/app/components/witnessToggler.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function WitnessToggler(_ref) {
   var children = _ref.children;
   var _useState = (0, _react.useState)(false),
@@ -2118,91 +1490,43 @@ function WitnessToggler(_ref) {
   var toggleConfigurations = function toggleConfigurations() {
     setToggleExpander(!toggleExpander);
   };
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
       className: "d-flex circuit_config_section justify-content-between",
       onClick: toggleConfigurations,
       "data-id": "witness_toggler",
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
         className: "d-flex",
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("label", {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
           className: "mt-1 circuit_config_section",
-          children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactIntl.FormattedMessage, {
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactIntl.FormattedMessage, {
             id: "circuit.computeWitness"
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 17,
-            columnNumber: 13
-          }, this)
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 16,
-          columnNumber: 11
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 15,
-        columnNumber: 9
-      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+          })
+        })
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("span", {
           "data-id": "scConfigExpander",
           onClick: toggleConfigurations,
-          children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIf, {
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIf, {
             condition: toggleExpander,
-            children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+            children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
               className: "fas fa-angle-down",
               "aria-hidden": "true"
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 23,
-              columnNumber: 15
-            }, this)
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 22,
-            columnNumber: 13
-          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIfNot, {
+            })
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIfNot, {
             condition: toggleExpander,
-            children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+            children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
               className: "fas fa-angle-right",
               "aria-hidden": "true"
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 26,
-              columnNumber: 15
-            }, this)
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 25,
-            columnNumber: 13
-          }, this)]
-        }, void 0, true, {
-          fileName: _jsxFileName,
-          lineNumber: 21,
-          columnNumber: 11
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 20,
-        columnNumber: 9
-      }, this)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 7
-    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.RenderIf, {
+            })
+          })]
+        })
+      })]
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.RenderIf, {
       condition: toggleExpander,
       children: children
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 7
-    }, this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 13,
-    columnNumber: 5
-  }, this);
+    })]
+  });
 }
 
 /***/ }),
@@ -3165,15 +2489,10 @@ var _interopRequireDefault = __webpack_require__(67085);
 var _react = _interopRequireDefault(__webpack_require__(47182));
 var _client = __webpack_require__(78244);
 var _app = _interopRequireDefault(__webpack_require__(957));
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/apps/circuit-compiler/src/main.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 var container = document.getElementById('root');
 if (container) {
-  (0, _client.createRoot)(container).render( /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_app["default"], {}, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 32
-  }, void 0));
+  (0, _client.createRoot)(container).render( /*#__PURE__*/(0, _jsxRuntime.jsx)(_app["default"], {}));
 }
 
 /***/ }),
@@ -8232,10 +7551,8 @@ var _react = _interopRequireWildcard(__webpack_require__(47182));
 var _copyToClipboard = _interopRequireDefault(__webpack_require__(93700));
 __webpack_require__(24512);
 var _helper = __webpack_require__(63878);
-var _jsxDevRuntime = __webpack_require__(16872);
+var _jsxRuntime = __webpack_require__(97659);
 var _excluded = ["tip", "icon", "direction", "getContent", "children"];
-var _jsxFileName = "/workspaces/remix-project/libs/remix-ui/clipboard/src/lib/copy-to-clipboard/copy-to-clipboard.tsx",
-  _this = void 0;
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 var CopyToClipboard = function CopyToClipboard(props) {
@@ -8284,33 +7601,21 @@ var CopyToClipboard = function CopyToClipboard(props) {
       return setMessage(tip);
     }, 500);
   };
-  var childJSX = children || /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", Object.assign({
+  var childJSX = children || /*#__PURE__*/(0, _jsxRuntime.jsx)("i", Object.assign({
     className: "far ".concat(icon, " ml-1 p-2"),
     "aria-hidden": "true"
-  }, otherProps), void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 55,
-    columnNumber: 32
-  }, _this);
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("a", {
+  }, otherProps));
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("a", {
     href: "#",
     onClick: handleClick,
     onMouseLeave: reset,
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.CustomTooltip, {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.CustomTooltip, {
       tooltipText: message,
       tooltipId: "overlay-tooltip",
       placement: direction,
       children: childJSX
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 59,
-      columnNumber: 7
-    }, _this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 58,
-    columnNumber: 5
-  }, _this);
+    })
+  });
 };
 exports.CopyToClipboard = CopyToClipboard;
 var _default = CopyToClipboard;
@@ -8508,7 +7813,7 @@ Object.defineProperty(exports, "__esModule", ({
 exports.PluginViewWrapper = void 0;
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(15159));
 var _react = _interopRequireWildcard(__webpack_require__(47182));
-var _jsxDevRuntime = __webpack_require__(16872);
+var _jsxRuntime = __webpack_require__(97659);
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 var PluginViewWrapper = function PluginViewWrapper(props) {
@@ -8521,11 +7826,11 @@ var PluginViewWrapper = function PluginViewWrapper(props) {
       props.plugin.setDispatch(setState);
     }
   }, []);
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
-    children: state ? /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
+    children: state ? /*#__PURE__*/(0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
       children: props.plugin.updateComponent(state)
-    }, void 0, false) : /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {}, void 0, false)
-  }, void 0, false);
+    }) : /*#__PURE__*/(0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {})
+  });
 };
 exports.PluginViewWrapper = PluginViewWrapper;
 
@@ -8545,9 +7850,9 @@ exports.ProxyDropdownMenu = exports.ProxyAddressToggle = exports.CustomToggle = 
 var _react = _interopRequireDefault(__webpack_require__(47182));
 var _reactIntl = __webpack_require__(24831);
 var _helper = __webpack_require__(63878);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/libs/remix-ui/helper/src/lib/components/custom-dropdown.tsx",
-  _this = void 0; // The forwardRef is important!!
+var _jsxRuntime = __webpack_require__(97659);
+// The forwardRef is important!!
+
 // Dropdown needs access to the DOM node in order to position the Menu
 var CustomToggle = /*#__PURE__*/_react["default"].forwardRef(function (_ref, ref) {
   var children = _ref.children,
@@ -8555,58 +7860,30 @@ var CustomToggle = /*#__PURE__*/_react["default"].forwardRef(function (_ref, ref
     icon = _ref.icon,
     _ref$className = _ref.className,
     className = _ref$className === void 0 ? '' : _ref$className;
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("button", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
     ref: ref,
     onClick: function onClick(e) {
       e.preventDefault();
       _onClick(e);
     },
     className: className.replace('dropdown-toggle', ''),
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
       className: "d-flex",
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
         className: "mr-auto text-nowrap text-truncate overflow-hidden",
         children: children
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 32,
-        columnNumber: 9
-      }, _this), icon && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      }), icon && /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
         className: "pr-1",
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
           className: "".concat(icon, " pr-1")
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 35,
-          columnNumber: 13
-        }, _this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 34,
-        columnNumber: 11
-      }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+        })
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
           className: "fad fa-sort-circle"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 39,
-          columnNumber: 11
-        }, _this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 38,
-        columnNumber: 9
-      }, _this)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 7
-    }, _this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 23,
-    columnNumber: 5
-  }, _this);
+        })
+      })]
+    })
+  });
 });
 exports.CustomToggle = CustomToggle;
 var CustomIconsToggle = /*#__PURE__*/_react["default"].forwardRef(function (_ref2, ref) {
@@ -8614,7 +7891,7 @@ var CustomIconsToggle = /*#__PURE__*/_react["default"].forwardRef(function (_ref
     icon = _ref2.icon,
     _ref2$className = _ref2.className,
     className = _ref2$className === void 0 ? '' : _ref2$className;
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
     ref: ref,
     onClick: function onClick(e) {
       e.preventDefault();
@@ -8622,38 +7899,22 @@ var CustomIconsToggle = /*#__PURE__*/_react["default"].forwardRef(function (_ref
     },
     className: "".concat(className.replace('dropdown-toggle', ''), " mr-1 mb-0 pb-0 d-flex justify-content-end align-items-end remixuimenuicon_shadow remixuimenuicon_hamburger_menu fs-3"),
     "data-id": "workspaceMenuDropdown",
-    children: icon && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_helper.CustomTooltip, {
+    children: icon && /*#__PURE__*/(0, _jsxRuntime.jsx)(_helper.CustomTooltip, {
       placement: 'top',
       tooltipClasses: "text-nowrap text-left",
       tooltipId: "remixHamburgerTooltip",
-      tooltipText: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactIntl.FormattedMessage, {
+      tooltipText: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactIntl.FormattedMessage, {
         id: "filePanel.workspaceActions"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 74,
-        columnNumber: 24
-      }, _this),
-      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+      }),
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
         style: {
           fontSize: 'large'
         },
         className: "".concat(icon),
         "data-id": "workspaceDropdownMenuIcon"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 76,
-        columnNumber: 11
-      }, _this)
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 70,
-      columnNumber: 9
-    }, _this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 60,
-    columnNumber: 5
-  }, _this);
+      })
+    })
+  });
 });
 
 // forwardRef again here!
@@ -8666,28 +7927,20 @@ var CustomMenu = /*#__PURE__*/_react["default"].forwardRef(function (_ref3, ref)
     className = _ref3.className,
     labeledBy = _ref3['aria-labelledby'];
   var height = window.innerHeight * 0.6;
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
     ref: ref,
     style: style,
     className: className,
     "aria-labelledby": labeledBy,
     "data-id": dataId,
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("ul", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("ul", {
       className: "overflow-auto list-unstyled mb-0",
       style: {
         maxHeight: height + 'px'
       },
       children: children
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 105,
-      columnNumber: 9
-    }, _this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 104,
-    columnNumber: 7
-  }, _this);
+    })
+  });
 });
 exports.CustomMenu = CustomMenu;
 var ProxyAddressToggle = /*#__PURE__*/_react["default"].forwardRef(function (_ref4, ref) {
@@ -8697,7 +7950,7 @@ var ProxyAddressToggle = /*#__PURE__*/_react["default"].forwardRef(function (_re
     className = _ref4$className === void 0 ? '' : _ref4$className,
     _onChange = _ref4.onChange;
   var intl = (0, _reactIntl.useIntl)();
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
     ref: ref,
     onClick: function onClick(e) {
       e.preventDefault();
@@ -8705,7 +7958,7 @@ var ProxyAddressToggle = /*#__PURE__*/_react["default"].forwardRef(function (_re
     },
     className: 'd-flex ' + className.replace('dropdown-toggle', ''),
     "data-id": "toggleProxyAddressDropdown",
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("input", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
       onChange: function onChange(e) {
         e.preventDefault();
         _onChange(e);
@@ -8719,16 +7972,8 @@ var ProxyAddressToggle = /*#__PURE__*/_react["default"].forwardRef(function (_re
         width: '100%'
       },
       "data-id": "ERC1967AddressInput"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 139,
-      columnNumber: 9
-    }, _this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 130,
-    columnNumber: 7
-  }, _this);
+    })
+  });
 });
 exports.ProxyAddressToggle = ProxyAddressToggle;
 var ProxyDropdownMenu = /*#__PURE__*/_react["default"].forwardRef(function (_ref5, ref) {
@@ -8736,24 +7981,16 @@ var ProxyDropdownMenu = /*#__PURE__*/_react["default"].forwardRef(function (_ref
     style = _ref5.style,
     className = _ref5.className,
     labeledBy = _ref5['aria-labelledby'];
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
     ref: ref,
     style: style,
     className: className,
     "aria-labelledby": labeledBy,
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("ul", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("ul", {
       className: "list-unstyled mb-0",
       children: children
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 172,
-      columnNumber: 9
-    }, _this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 171,
-    columnNumber: 7
-  }, _this);
+    })
+  });
 });
 exports.ProxyDropdownMenu = ProxyDropdownMenu;
 
@@ -8772,8 +8009,7 @@ Object.defineProperty(exports, "__esModule", ({
 exports.CustomTooltip = CustomTooltip;
 var _react = _interopRequireWildcard(__webpack_require__(47182));
 var _reactBootstrap = __webpack_require__(6196);
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/libs/remix-ui/helper/src/lib/components/custom-tooltip.tsx";
+var _jsxRuntime = __webpack_require__(97659);
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 function CustomTooltip(_ref) {
@@ -8791,56 +8027,32 @@ function CustomTooltip(_ref) {
     });
     tooltipText = newTooltipText;
   }
-  return !hide ? /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_react.Fragment, {
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.OverlayTrigger, {
+  return !hide ? /*#__PURE__*/(0, _jsxRuntime.jsx)(_react.Fragment, {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactBootstrap.OverlayTrigger, {
       placement: placement,
-      overlay: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.Popover, {
+      overlay: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactBootstrap.Popover, {
         id: "popover-positioned-".concat(placement),
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactBootstrap.Popover.Content, {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactBootstrap.Popover.Content, {
           id: !tooltipId ? "".concat(tooltipText, "Tooltip") : tooltipId,
           style: {
             minWidth: 'fit-content'
           },
           className: 'text-wrap p-1 px-2 bg-secondary w-100' + tooltipClasses,
-          children: typeof tooltipText === 'string' ? /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+          children: typeof tooltipText === 'string' ? /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
             className: 'text-wrap p-1 px-2 bg-secondary ' + {
               tooltipTextClasses: tooltipTextClasses
             },
             children: tooltipText
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 27,
-            columnNumber: 52
-          }, this) : tooltipText
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 22,
-          columnNumber: 15
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 21,
-        columnNumber: 13
-      }, this),
+          }) : tooltipText
+        })
+      }),
       children: children
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 9
-    }, this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 17,
-    columnNumber: 7
-  }, this) : /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_react.Fragment, {
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {
+    })
+  }) : /*#__PURE__*/(0, _jsxRuntime.jsx)(_react.Fragment, {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
       children: children
-    }, void 0, false)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 35,
-    columnNumber: 7
-  }, this);
+    })
+  });
 }
 
 /***/ }),
@@ -8859,462 +8071,216 @@ exports.RenderIf = RenderIf;
 exports.RenderIfNot = RenderIfNot;
 exports.upgradeWithProxyMsg = exports.upgradeReportMsg = exports.unavailableProxyLayoutMsg = exports.storageFullMessage = exports.sourceVerificationNotAvailableToastMsg = exports.recursivePasteToastMsg = exports.notFoundToastMsg = exports.logBuilder = exports.localCompilationToastMsg = exports.fileChangedToastMsg = exports.envChangeNotification = exports.deployWithProxyMsg = exports.compilingToastMsg = exports.compilerConfigChangedToastMsg = exports.compileToastMsg = exports.compilationFinishedToastMsg = exports.cancelUpgradeMsg = exports.cancelProxyMsg = void 0;
 var _react = _interopRequireDefault(__webpack_require__(47182));
-var _jsxDevRuntime = __webpack_require__(16872);
-var _jsxFileName = "/workspaces/remix-project/libs/remix-ui/helper/src/lib/helper-components.tsx",
-  _this = void 0;
+var _jsxRuntime = __webpack_require__(97659);
 var fileChangedToastMsg = function fileChangedToastMsg(from, path) {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
       className: "fas fa-exclamation-triangle text-danger mr-1"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 6,
-      columnNumber: 5
-    }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
-      children: [from, " ", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("span", {
+      children: [from, " ", /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
         className: "font-weight-bold text-warning",
         children: "is modifying"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 8,
-        columnNumber: 14
-      }, _this), " ", path]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 5
-    }, _this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 5,
-    columnNumber: 3
-  }, _this);
+      }), " ", path]
+    })]
+  });
 };
 exports.fileChangedToastMsg = fileChangedToastMsg;
 var compilerConfigChangedToastMsg = function compilerConfigChangedToastMsg(from, value) {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
       children: from
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 5
-    }, _this), " is updating the ", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+    }), " is updating the ", /*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
       children: "Solidity compiler configuration"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 35
-    }, _this), ".", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("pre", {
+    }), ".", /*#__PURE__*/(0, _jsxRuntime.jsx)("pre", {
       className: "text-left",
       children: value
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 74
-    }, _this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 14,
-    columnNumber: 3
-  }, _this);
+    })]
+  });
 };
 exports.compilerConfigChangedToastMsg = compilerConfigChangedToastMsg;
 var compileToastMsg = function compileToastMsg(from, fileName) {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
       children: from
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 5
-    }, _this), " is requiring to compile ", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+    }), " is requiring to compile ", /*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
       children: fileName
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 43
-    }, _this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 20,
-    columnNumber: 3
-  }, _this);
+    })]
+  });
 };
 exports.compileToastMsg = compileToastMsg;
 var compilingToastMsg = function compilingToastMsg(settings) {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
       children: "Recompiling and debugging with params"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 5
-    }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("pre", {
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("pre", {
       className: "text-left",
       children: settings
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 5
-    }, _this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 26,
-    columnNumber: 3
-  }, _this);
+    })]
+  });
 };
 exports.compilingToastMsg = compilingToastMsg;
 var compilationFinishedToastMsg = function compilationFinishedToastMsg() {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
       children: "Compilation failed..."
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 34,
-      columnNumber: 5
-    }, _this), " continuing ", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+    }), " continuing ", /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
       children: "without"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 34,
-      columnNumber: 45
-    }, _this), " source code debugging."]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 33,
-    columnNumber: 3
-  }, _this);
+    }), " source code debugging."]
+  });
 };
 exports.compilationFinishedToastMsg = compilationFinishedToastMsg;
 var notFoundToastMsg = function notFoundToastMsg(address) {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("b", {
       children: ["Contract ", address, " not found in source code repository"]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 5
-    }, _this), " continuing ", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+    }), " continuing ", /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
       children: "without"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 78
-    }, _this), " source code debugging."]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 39,
-    columnNumber: 3
-  }, _this);
+    }), " source code debugging."]
+  });
 };
 exports.notFoundToastMsg = notFoundToastMsg;
 var localCompilationToastMsg = function localCompilationToastMsg() {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
       children: "Using compilation result from Solidity module"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 46,
-      columnNumber: 5
-    }, _this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 45,
-    columnNumber: 3
-  }, _this);
+    })
+  });
 };
 exports.localCompilationToastMsg = localCompilationToastMsg;
 var sourceVerificationNotAvailableToastMsg = function sourceVerificationNotAvailableToastMsg() {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
       children: "Source verification plugin not activated or not available."
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 52,
-      columnNumber: 5
-    }, _this), " continuing ", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+    }), " continuing ", /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
       children: "without"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 52,
-      columnNumber: 82
-    }, _this), " source code debugging."]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 51,
-    columnNumber: 3
-  }, _this);
+    }), " source code debugging."]
+  });
 };
 exports.sourceVerificationNotAvailableToastMsg = sourceVerificationNotAvailableToastMsg;
 var envChangeNotification = function envChangeNotification(env, from) {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
       className: "fas fa-exclamation-triangle text-danger mr-1"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 58,
-      columnNumber: 5
-    }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
-      children: [from + ' ', /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("span", {
+      children: [from + ' ', /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
         className: "font-weight-bold text-warning",
         children: "set your environment to"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 61,
-        columnNumber: 7
-      }, _this), " ", env && env.context]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 59,
-      columnNumber: 5
-    }, _this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 57,
-    columnNumber: 3
-  }, _this);
+      }), " ", env && env.context]
+    })]
+  });
 };
 exports.envChangeNotification = envChangeNotification;
 var storageFullMessage = function storageFullMessage() {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
       className: "fas fa-exclamation-triangle text-danger mr-1"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 68,
-      columnNumber: 5
-    }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
       className: "font-weight-bold",
-      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
         children: "Cannot save this file due to full LocalStorage. Backup existing files and free up some space."
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 70,
-        columnNumber: 7
-      }, _this)
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 69,
-      columnNumber: 5
-    }, _this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 67,
-    columnNumber: 3
-  }, _this);
+      })
+    })]
+  });
 };
 exports.storageFullMessage = storageFullMessage;
 var recursivePasteToastMsg = function recursivePasteToastMsg() {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
     children: "File(s) to paste is an ancestor of the destination folder"
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 75,
-    columnNumber: 45
-  }, _this);
+  });
 };
 exports.recursivePasteToastMsg = recursivePasteToastMsg;
 var logBuilder = function logBuilder(msg) {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("pre", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("pre", {
     children: msg
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 78,
-    columnNumber: 10
-  }, _this);
+  });
 };
 exports.logBuilder = logBuilder;
 var cancelProxyMsg = function cancelProxyMsg() {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
       children: "Proxy deployment cancelled."
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 83,
-      columnNumber: 5
-    }, _this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 82,
-    columnNumber: 3
-  }, _this);
+    })
+  });
 };
 exports.cancelProxyMsg = cancelProxyMsg;
 var cancelUpgradeMsg = function cancelUpgradeMsg() {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
       children: "Upgrade with proxy cancelled."
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 89,
-      columnNumber: 5
-    }, _this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 88,
-    columnNumber: 3
-  }, _this);
+    })
+  });
 };
 exports.cancelUpgradeMsg = cancelUpgradeMsg;
 var deployWithProxyMsg = function deployWithProxyMsg() {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
       children: "Deploy with Proxy"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 95,
-      columnNumber: 5
-    }, _this), " will initiate two (2) transactions:", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("ol", {
+    }), " will initiate two (2) transactions:", /*#__PURE__*/(0, _jsxRuntime.jsxs)("ol", {
       className: "pl-3",
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("li", {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("li", {
         children: "Deploying the implementation contract"
-      }, "impl-contract", false, {
-        fileName: _jsxFileName,
-        lineNumber: 97,
-        columnNumber: 7
-      }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("li", {
+      }, "impl-contract"), /*#__PURE__*/(0, _jsxRuntime.jsx)("li", {
         children: "Deploying an ERC1967 proxy contract"
-      }, "proxy-contract", false, {
-        fileName: _jsxFileName,
-        lineNumber: 98,
-        columnNumber: 7
-      }, _this)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 96,
-      columnNumber: 5
-    }, _this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 94,
-    columnNumber: 3
-  }, _this);
+      }, "proxy-contract")]
+    })]
+  });
 };
 exports.deployWithProxyMsg = deployWithProxyMsg;
 var upgradeWithProxyMsg = function upgradeWithProxyMsg() {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("b", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("b", {
       children: "Upgrade with Proxy"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 105,
-      columnNumber: 5
-    }, _this), " will initiate two (2) transactions:", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("ol", {
+    }), " will initiate two (2) transactions:", /*#__PURE__*/(0, _jsxRuntime.jsxs)("ol", {
       className: "pl-3",
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("li", {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("li", {
         children: "Deploying the new implementation contract"
-      }, "new-impl-contract", false, {
-        fileName: _jsxFileName,
-        lineNumber: 107,
-        columnNumber: 7
-      }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("li", {
+      }, "new-impl-contract"), /*#__PURE__*/(0, _jsxRuntime.jsx)("li", {
         children: "Updating the proxy contract with the address of the new implementation contract"
-      }, "update-proxy-contract", false, {
-        fileName: _jsxFileName,
-        lineNumber: 108,
-        columnNumber: 7
-      }, _this)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 106,
-      columnNumber: 5
-    }, _this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 104,
-    columnNumber: 3
-  }, _this);
+      }, "update-proxy-contract")]
+    })]
+  });
 };
 exports.upgradeWithProxyMsg = upgradeWithProxyMsg;
 var unavailableProxyLayoutMsg = function unavailableProxyLayoutMsg() {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
-      children: ["The previous contract implementation is NOT available for an upgrade comparison", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 117,
-        columnNumber: 7
-      }, _this), " A new storage layout will be saved for future upgrades."]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 115,
-      columnNumber: 5
-    }, _this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 114,
-    columnNumber: 3
-  }, _this);
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("p", {
+      children: ["The previous contract implementation is NOT available for an upgrade comparison", /*#__PURE__*/(0, _jsxRuntime.jsx)("br", {}), " A new storage layout will be saved for future upgrades."]
+    })
+  });
 };
 exports.unavailableProxyLayoutMsg = unavailableProxyLayoutMsg;
 var upgradeReportMsg = function upgradeReportMsg(report) {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
       className: "py-2 ml-2 mb-1 align-self-end mb-2 d-flex",
-      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
         className: "align-self-center pl-4 mt-1",
-        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("i", {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
           className: "pr-2 text-warning far fa-exclamation-triangle",
           "aria-hidden": "true",
           style: {
             fontSize: 'xxx-large',
             fontWeight: 'lighter'
           }
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 126,
-          columnNumber: 9
-        }, _this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 125,
-        columnNumber: 7
-      }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        })
+      }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
         className: "d-flex flex-column",
-        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
           className: "pl-4 mt-1",
           children: "The storage layout of new implementation is NOT"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 129,
-          columnNumber: 9
-        }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
           className: "pl-4 mt-1",
           children: "compatible with the previous implementation."
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 130,
-          columnNumber: 9
-        }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
           className: "pl-4 mt-1",
           children: "Your contract's storage may be partially or fully erased!"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 131,
-          columnNumber: 9
-        }, _this)]
-      }, void 0, true, {
-        fileName: _jsxFileName,
-        lineNumber: 128,
-        columnNumber: 7
-      }, _this)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 124,
-      columnNumber: 5
-    }, _this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        })]
+      })]
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
       className: "pl-4 text-danger",
       children: report.explain()
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 134,
-      columnNumber: 5
-    }, _this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 123,
-    columnNumber: 3
-  }, _this);
+    })]
+  });
 };
 exports.upgradeReportMsg = upgradeReportMsg;
 function RenderIf(_ref) {
@@ -9686,7 +8652,7 @@ __webpack_require__.r(__webpack_exports__);
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ __webpack_require__.O(0, ["vendor"], () => (__webpack_exec__(2002)));
+/******/ __webpack_require__.O(0, [736], () => (__webpack_exec__(2002)));
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);

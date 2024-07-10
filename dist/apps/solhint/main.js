@@ -1,4 +1,4 @@
-(self["webpackChunksolhint"] = self["webpackChunksolhint"] || []).push([["main"],{
+(self["webpackChunksolhint"] = self["webpackChunksolhint"] || []).push([[179],{
 
 /***/ 2424:
 /***/ ((module) => {
@@ -58,10 +58,10 @@ Object.defineProperty(exports, "__esModule", ({
 exports["default"] = App;
 var _react = _interopRequireDefault(__webpack_require__(7182));
 var _SolhintPluginClient = __webpack_require__(2899);
-var _jsxDevRuntime = __webpack_require__(6872);
+var _jsxRuntime = __webpack_require__(7659);
 var client = new _SolhintPluginClient.SolHint();
 function App() {
-  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_jsxDevRuntime.Fragment, {}, void 0, false);
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {});
 }
 
 /***/ }),
@@ -87,8 +87,8 @@ var _inherits2 = _interopRequireDefault(__webpack_require__(9346));
 var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(5268));
 var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(3910));
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(6604));
-var _plugin = __webpack_require__(7428);
-var _pluginWebview = __webpack_require__(130);
+var _plugin = __webpack_require__(481);
+var _pluginWebview = __webpack_require__(8522);
 var _solhint = __webpack_require__(2982);
 var _configFile = __webpack_require__(9276);
 var _bestPractises = _interopRequireDefault(__webpack_require__(6309));
@@ -375,21 +375,12 @@ var _interopRequireDefault = __webpack_require__(7085);
 var _react = _interopRequireDefault(__webpack_require__(7182));
 var _client = __webpack_require__(8244);
 var _App = _interopRequireDefault(__webpack_require__(1753));
-var _jsxDevRuntime = __webpack_require__(6872);
-var _jsxFileName = "/workspaces/remix-project/apps/solhint/src/main.tsx";
+var _jsxRuntime = __webpack_require__(7659);
 var container = document.getElementById('root');
 if (container) {
-  (0, _client.createRoot)(container).render( /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_react["default"].StrictMode, {
-    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_App["default"], {}, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 5
-    }, void 0)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 32
-  }, void 0));
+  (0, _client.createRoot)(container).render( /*#__PURE__*/(0, _jsxRuntime.jsx)(_react["default"].StrictMode, {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_App["default"], {})
+  }));
 }
 
 /***/ }),
@@ -509,7 +500,7 @@ if (container) {
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ __webpack_require__.O(0, ["vendor"], () => (__webpack_exec__(2002)));
+/******/ __webpack_require__.O(0, [736], () => (__webpack_exec__(2002)));
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
