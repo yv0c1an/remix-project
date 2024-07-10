@@ -659,48 +659,52 @@ export const EditorUI = (props: EditorUIProps) => {
         ;(window as any).addRemixBreakpoint(e.target.position)
       }
     })
+    
+    /**
+     * 删除粘贴提示
+     */
 
-    editor.onDidPaste((e) => {
-      if (!pasteCodeRef.current && e && e.range && e.range.startLineNumber >= 0 && e.range.endLineNumber >= 0 && e.range.endLineNumber - e.range.startLineNumber > 10) {
-        const modalContent: AlertModal = {
-          id: 'newCodePasted',
-          title: intl.formatMessage({ id: 'editor.title1' }),
-          message: (
-            <div>
-              {' '}
-              <i className="fas fa-exclamation-triangle text-danger mr-1"></i>
-              <FormattedMessage id="editor.title1.message1" />
-              <div>
-                <FormattedMessage id="editor.title1.message2" />
-                <div className="mt-2">
-                  <FormattedMessage id="editor.title1.message3" values={{ span: (chunks) => <span className="text-warning">{chunks}</span> }} />
-                </div>
-                <div className="text-warning  mt-2">
-                  <FormattedMessage id="editor.title1.message4" />
-                </div>
-                <div className="mt-2">
-                  <FormattedMessage id="editor.title1.message5" />
-                </div>
-                <div className="mt-2">
-                  <FormattedMessage
-                    id="editor.title1.message6"
-                    values={{
-                      a: (chunks) => (
-                        <a target="_blank" href="https://remix-ide.readthedocs.io/en/latest/security.html">
-                          {chunks}
-                        </a>
-                      ),
-                    }}
-                  />
-                </div>
-              </div>
-            </div>
-          ),
-        }
-        props.plugin.call('notification', 'alert', modalContent)
-        pasteCodeRef.current = true
-      }
-    })
+    // editor.onDidPaste((e) => {
+    //   if (!pasteCodeRef.current && e && e.range && e.range.startLineNumber >= 0 && e.range.endLineNumber >= 0 && e.range.endLineNumber - e.range.startLineNumber > 10) {
+    //     const modalContent: AlertModal = {
+    //       id: 'newCodePasted',
+    //       title: intl.formatMessage({ id: 'editor.title1' }),
+    //       message: (
+    //         <div>
+    //           {' '}
+    //           <i className="fas fa-exclamation-triangle text-danger mr-1"></i>
+    //           <FormattedMessage id="editor.title1.message1" />
+    //           <div>
+    //             <FormattedMessage id="editor.title1.message2" />
+    //             <div className="mt-2">
+    //               <FormattedMessage id="editor.title1.message3" values={{ span: (chunks) => <span className="text-warning">{chunks}</span> }} />
+    //             </div>
+    //             <div className="text-warning  mt-2">
+    //               <FormattedMessage id="editor.title1.message4" />
+    //             </div>
+    //             <div className="mt-2">
+    //               <FormattedMessage id="editor.title1.message5" />
+    //             </div>
+    //             <div className="mt-2">
+    //               <FormattedMessage
+    //                 id="editor.title1.message6"
+    //                 values={{
+    //                   a: (chunks) => (
+    //                     <a target="_blank" href="https://remix-ide.readthedocs.io/en/latest/security.html">
+    //                       {chunks}
+    //                     </a>
+    //                   ),
+    //                 }}
+    //               />
+    //             </div>
+    //           </div>
+    //         </div>
+    //       ),
+    //     }
+    //     props.plugin.call('notification', 'alert', modalContent)
+    //     pasteCodeRef.current = true
+    //   }
+    // })
 
     editor.onDidChangeModelContent((e) => {
       if (inlineCompletionProvider.currentCompletion) {

@@ -665,7 +665,7 @@ const stdoutColor = (__webpack_require__(457).stdout);
 
 const template = __webpack_require__(7998);
 
-const isSimpleWindowsTerm = process.platform === 'win32' && !(({"NX_CLI_SET":"true","NX_LOAD_DOT_ENV_FILES":"true","NX_WORKSPACE_ROOT":"/workspaces/remix-project","NX_SKIP_NX_CACHE":"true","NX_TERMINAL_OUTPUT_PATH":"/workspaces/remix-project/node_modules/.cache/nx/terminalOutputs/bc5a1c00d13de4d80a1f7e7fca7a6d46d733358163a2e7732cc6d6a54d32db70","NX_TASK_TARGET_PROJECT":"solhint","NX_TASK_HASH":"bc5a1c00d13de4d80a1f7e7fca7a6d46d733358163a2e7732cc6d6a54d32db70"}).TERM || '').toLowerCase().startsWith('xterm');
+const isSimpleWindowsTerm = process.platform === 'win32' && !(({"NX_CLI_SET":"true","NX_LOAD_DOT_ENV_FILES":"true","NX_WORKSPACE_ROOT":"/workspaces/remix-project","NX_SKIP_NX_CACHE":"true","NX_TERMINAL_OUTPUT_PATH":"/workspaces/remix-project/node_modules/.cache/nx/terminalOutputs/f8e2581fb1cae2127c2d03eec19e06e7b0fc6fea32918bca7808abe1a056f52d","NX_TASK_TARGET_PROJECT":"solhint","NX_TASK_HASH":"f8e2581fb1cae2127c2d03eec19e06e7b0fc6fea32918bca7808abe1a056f52d"}).TERM || '').toLowerCase().startsWith('xterm');
 
 // `supportsColor.level` → `ansiStyles.color[name]` mapping
 const levelMapping = ['ansi', 'ansi', 'ansi256', 'ansi16m'];
@@ -48390,7 +48390,7 @@ var fs = __webpack_require__(2535);
 
 // JavaScript implementation of realpath, ported from node pre-v6
 
-var DEBUG = ({"NX_CLI_SET":"true","NX_LOAD_DOT_ENV_FILES":"true","NX_WORKSPACE_ROOT":"/workspaces/remix-project","NX_SKIP_NX_CACHE":"true","NX_TERMINAL_OUTPUT_PATH":"/workspaces/remix-project/node_modules/.cache/nx/terminalOutputs/bc5a1c00d13de4d80a1f7e7fca7a6d46d733358163a2e7732cc6d6a54d32db70","NX_TASK_TARGET_PROJECT":"solhint","NX_TASK_HASH":"bc5a1c00d13de4d80a1f7e7fca7a6d46d733358163a2e7732cc6d6a54d32db70"}).NODE_DEBUG && /fs/.test(({"NX_CLI_SET":"true","NX_LOAD_DOT_ENV_FILES":"true","NX_WORKSPACE_ROOT":"/workspaces/remix-project","NX_SKIP_NX_CACHE":"true","NX_TERMINAL_OUTPUT_PATH":"/workspaces/remix-project/node_modules/.cache/nx/terminalOutputs/bc5a1c00d13de4d80a1f7e7fca7a6d46d733358163a2e7732cc6d6a54d32db70","NX_TASK_TARGET_PROJECT":"solhint","NX_TASK_HASH":"bc5a1c00d13de4d80a1f7e7fca7a6d46d733358163a2e7732cc6d6a54d32db70"}).NODE_DEBUG);
+var DEBUG = ({"NX_CLI_SET":"true","NX_LOAD_DOT_ENV_FILES":"true","NX_WORKSPACE_ROOT":"/workspaces/remix-project","NX_SKIP_NX_CACHE":"true","NX_TERMINAL_OUTPUT_PATH":"/workspaces/remix-project/node_modules/.cache/nx/terminalOutputs/f8e2581fb1cae2127c2d03eec19e06e7b0fc6fea32918bca7808abe1a056f52d","NX_TASK_TARGET_PROJECT":"solhint","NX_TASK_HASH":"f8e2581fb1cae2127c2d03eec19e06e7b0fc6fea32918bca7808abe1a056f52d"}).NODE_DEBUG && /fs/.test(({"NX_CLI_SET":"true","NX_LOAD_DOT_ENV_FILES":"true","NX_WORKSPACE_ROOT":"/workspaces/remix-project","NX_SKIP_NX_CACHE":"true","NX_TERMINAL_OUTPUT_PATH":"/workspaces/remix-project/node_modules/.cache/nx/terminalOutputs/f8e2581fb1cae2127c2d03eec19e06e7b0fc6fea32918bca7808abe1a056f52d","NX_TASK_TARGET_PROJECT":"solhint","NX_TASK_HASH":"f8e2581fb1cae2127c2d03eec19e06e7b0fc6fea32918bca7808abe1a056f52d"}).NODE_DEBUG);
 
 function rethrow() {
   // Only enable in debug mode. A backtrace uses ~1000 bytes of heap space and
@@ -50817,7 +50817,7 @@ if (
   // Detect `process` so that it can run in browsers.
   typeof process !== 'undefined'
   && (
-     true && ({"NX_CLI_SET":"true","NX_LOAD_DOT_ENV_FILES":"true","NX_WORKSPACE_ROOT":"/workspaces/remix-project","NX_SKIP_NX_CACHE":"true","NX_TERMINAL_OUTPUT_PATH":"/workspaces/remix-project/node_modules/.cache/nx/terminalOutputs/bc5a1c00d13de4d80a1f7e7fca7a6d46d733358163a2e7732cc6d6a54d32db70","NX_TASK_TARGET_PROJECT":"solhint","NX_TASK_HASH":"bc5a1c00d13de4d80a1f7e7fca7a6d46d733358163a2e7732cc6d6a54d32db70"}).IGNORE_TEST_WIN32
+     true && ({"NX_CLI_SET":"true","NX_LOAD_DOT_ENV_FILES":"true","NX_WORKSPACE_ROOT":"/workspaces/remix-project","NX_SKIP_NX_CACHE":"true","NX_TERMINAL_OUTPUT_PATH":"/workspaces/remix-project/node_modules/.cache/nx/terminalOutputs/f8e2581fb1cae2127c2d03eec19e06e7b0fc6fea32918bca7808abe1a056f52d","NX_TASK_TARGET_PROJECT":"solhint","NX_TASK_HASH":"f8e2581fb1cae2127c2d03eec19e06e7b0fc6fea32918bca7808abe1a056f52d"}).IGNORE_TEST_WIN32
     || process.platform === 'win32'
   )
 ) {
@@ -73875,9 +73875,9 @@ exports = module.exports = SemVer
 var debug
 /* istanbul ignore next */
 if (typeof process === 'object' &&
-    ({"NX_CLI_SET":"true","NX_LOAD_DOT_ENV_FILES":"true","NX_WORKSPACE_ROOT":"/workspaces/remix-project","NX_SKIP_NX_CACHE":"true","NX_TERMINAL_OUTPUT_PATH":"/workspaces/remix-project/node_modules/.cache/nx/terminalOutputs/bc5a1c00d13de4d80a1f7e7fca7a6d46d733358163a2e7732cc6d6a54d32db70","NX_TASK_TARGET_PROJECT":"solhint","NX_TASK_HASH":"bc5a1c00d13de4d80a1f7e7fca7a6d46d733358163a2e7732cc6d6a54d32db70"}) &&
-    ({"NX_CLI_SET":"true","NX_LOAD_DOT_ENV_FILES":"true","NX_WORKSPACE_ROOT":"/workspaces/remix-project","NX_SKIP_NX_CACHE":"true","NX_TERMINAL_OUTPUT_PATH":"/workspaces/remix-project/node_modules/.cache/nx/terminalOutputs/bc5a1c00d13de4d80a1f7e7fca7a6d46d733358163a2e7732cc6d6a54d32db70","NX_TASK_TARGET_PROJECT":"solhint","NX_TASK_HASH":"bc5a1c00d13de4d80a1f7e7fca7a6d46d733358163a2e7732cc6d6a54d32db70"}).NODE_DEBUG &&
-    /\bsemver\b/i.test(({"NX_CLI_SET":"true","NX_LOAD_DOT_ENV_FILES":"true","NX_WORKSPACE_ROOT":"/workspaces/remix-project","NX_SKIP_NX_CACHE":"true","NX_TERMINAL_OUTPUT_PATH":"/workspaces/remix-project/node_modules/.cache/nx/terminalOutputs/bc5a1c00d13de4d80a1f7e7fca7a6d46d733358163a2e7732cc6d6a54d32db70","NX_TASK_TARGET_PROJECT":"solhint","NX_TASK_HASH":"bc5a1c00d13de4d80a1f7e7fca7a6d46d733358163a2e7732cc6d6a54d32db70"}).NODE_DEBUG)) {
+    ({"NX_CLI_SET":"true","NX_LOAD_DOT_ENV_FILES":"true","NX_WORKSPACE_ROOT":"/workspaces/remix-project","NX_SKIP_NX_CACHE":"true","NX_TERMINAL_OUTPUT_PATH":"/workspaces/remix-project/node_modules/.cache/nx/terminalOutputs/f8e2581fb1cae2127c2d03eec19e06e7b0fc6fea32918bca7808abe1a056f52d","NX_TASK_TARGET_PROJECT":"solhint","NX_TASK_HASH":"f8e2581fb1cae2127c2d03eec19e06e7b0fc6fea32918bca7808abe1a056f52d"}) &&
+    ({"NX_CLI_SET":"true","NX_LOAD_DOT_ENV_FILES":"true","NX_WORKSPACE_ROOT":"/workspaces/remix-project","NX_SKIP_NX_CACHE":"true","NX_TERMINAL_OUTPUT_PATH":"/workspaces/remix-project/node_modules/.cache/nx/terminalOutputs/f8e2581fb1cae2127c2d03eec19e06e7b0fc6fea32918bca7808abe1a056f52d","NX_TASK_TARGET_PROJECT":"solhint","NX_TASK_HASH":"f8e2581fb1cae2127c2d03eec19e06e7b0fc6fea32918bca7808abe1a056f52d"}).NODE_DEBUG &&
+    /\bsemver\b/i.test(({"NX_CLI_SET":"true","NX_LOAD_DOT_ENV_FILES":"true","NX_WORKSPACE_ROOT":"/workspaces/remix-project","NX_SKIP_NX_CACHE":"true","NX_TERMINAL_OUTPUT_PATH":"/workspaces/remix-project/node_modules/.cache/nx/terminalOutputs/f8e2581fb1cae2127c2d03eec19e06e7b0fc6fea32918bca7808abe1a056f52d","NX_TASK_TARGET_PROJECT":"solhint","NX_TASK_HASH":"f8e2581fb1cae2127c2d03eec19e06e7b0fc6fea32918bca7808abe1a056f52d"}).NODE_DEBUG)) {
   debug = function () {
     var args = Array.prototype.slice.call(arguments, 0)
     args.unshift('SEMVER')
@@ -96124,8 +96124,8 @@ exports.deprecate = function(fn, msg) {
 var debugs = {};
 var debugEnvRegex = /^$/;
 
-if (({"NX_CLI_SET":"true","NX_LOAD_DOT_ENV_FILES":"true","NX_WORKSPACE_ROOT":"/workspaces/remix-project","NX_SKIP_NX_CACHE":"true","NX_TERMINAL_OUTPUT_PATH":"/workspaces/remix-project/node_modules/.cache/nx/terminalOutputs/bc5a1c00d13de4d80a1f7e7fca7a6d46d733358163a2e7732cc6d6a54d32db70","NX_TASK_TARGET_PROJECT":"solhint","NX_TASK_HASH":"bc5a1c00d13de4d80a1f7e7fca7a6d46d733358163a2e7732cc6d6a54d32db70"}).NODE_DEBUG) {
-  var debugEnv = ({"NX_CLI_SET":"true","NX_LOAD_DOT_ENV_FILES":"true","NX_WORKSPACE_ROOT":"/workspaces/remix-project","NX_SKIP_NX_CACHE":"true","NX_TERMINAL_OUTPUT_PATH":"/workspaces/remix-project/node_modules/.cache/nx/terminalOutputs/bc5a1c00d13de4d80a1f7e7fca7a6d46d733358163a2e7732cc6d6a54d32db70","NX_TASK_TARGET_PROJECT":"solhint","NX_TASK_HASH":"bc5a1c00d13de4d80a1f7e7fca7a6d46d733358163a2e7732cc6d6a54d32db70"}).NODE_DEBUG;
+if (({"NX_CLI_SET":"true","NX_LOAD_DOT_ENV_FILES":"true","NX_WORKSPACE_ROOT":"/workspaces/remix-project","NX_SKIP_NX_CACHE":"true","NX_TERMINAL_OUTPUT_PATH":"/workspaces/remix-project/node_modules/.cache/nx/terminalOutputs/f8e2581fb1cae2127c2d03eec19e06e7b0fc6fea32918bca7808abe1a056f52d","NX_TASK_TARGET_PROJECT":"solhint","NX_TASK_HASH":"f8e2581fb1cae2127c2d03eec19e06e7b0fc6fea32918bca7808abe1a056f52d"}).NODE_DEBUG) {
+  var debugEnv = ({"NX_CLI_SET":"true","NX_LOAD_DOT_ENV_FILES":"true","NX_WORKSPACE_ROOT":"/workspaces/remix-project","NX_SKIP_NX_CACHE":"true","NX_TERMINAL_OUTPUT_PATH":"/workspaces/remix-project/node_modules/.cache/nx/terminalOutputs/f8e2581fb1cae2127c2d03eec19e06e7b0fc6fea32918bca7808abe1a056f52d","NX_TASK_TARGET_PROJECT":"solhint","NX_TASK_HASH":"f8e2581fb1cae2127c2d03eec19e06e7b0fc6fea32918bca7808abe1a056f52d"}).NODE_DEBUG;
   debugEnv = debugEnv.replace(/[|\\{}()[\]^$+?.]/g, '\\$&')
     .replace(/\*/g, '.*')
     .replace(/,/g, '$|^')
