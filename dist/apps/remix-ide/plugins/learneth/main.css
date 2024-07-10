@@ -1,0 +1,286 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.spinnersOverlay {
+  background-color: rgba(51, 51, 51, 0.8);
+  z-index: 99;
+  opacity: 1;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.spinnersLoading {
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.arrow-icon{
+  width: 3px;
+  display: inline-block;
+}
+
+.description-collapsed{
+  height: 0px;
+  overflow: hidden;
+  word-wrap: break-word;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.tag{
+  display: inline;
+}
+
+.arrow-icon{
+  width: 12px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.workshop-link {
+  cursor: pointer;
+}
+
+.workshop-link:hover {
+  text-decoration: underline;
+}
+
+a .arrow {
+  display: inline-block;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.3s;
+}
+a span {
+  display: inline-block;
+  padding-left: 5px;
+  transform: translateX(-0.875em);
+  transition: transform 0.3s;
+}
+.workshoptitle {
+  text-decoration: none;
+}
+a:hover fa-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+a:hover span {
+  transform: translateX(0);
+}
+.slide-enter {
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.slide-enter-active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: opacity 400ms, transform 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.slide-exit {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.slide-exit-active {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: opacity 400ms, transform 400ms cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  padding: 10px 5px;
+}
+
+.menuspacer {
+  margin-top: 52px;
+}
+
+.steplink {
+  text-decoration: none;
+}
+
+.title {
+  pointer-events: none;
+}
+
+h1 {
+  text-align: left;
+  font-size: 1.2rem !important;
+  word-break: break-word;
+}
+
+section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section .start {
+  padding: 5px 25px;
+  animation: jittery 2s 0.5s infinite;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@keyframes jittery {
+  5%, 50% {
+    transform: scale(1);
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
+  }
+  10% {
+    transform: scale(0.9);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+  15% {
+    transform: scale(1.15);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  20% {
+    transform: scale(1.15) rotate(-5deg);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  25% {
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  30% {
+    transform: scale(1.15) rotate(-3deg);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  35% {
+    transform: scale(1.15) rotate(2deg);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  40% {
+    transform: scale(1.15) rotate(0);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.5s forwards;
+  visibility: hidden;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+step-view {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+header, footer {
+  padding: 10px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.errorloadingspacer {
+  padding-top: 44px;
+}
+
+.title {
+  pointer-events: none;
+}
+
+h1 {
+  text-align: left;
+  font-size: 1.2rem !important;
+  word-break: break-word;
+}
+
+markdown {
+  display: block;
+  flex: 1;
+  overflow: auto;
+  padding: 0px;
+}
+
+markdown h1 {
+  font-size: 1.2rem !important;
+}
+
+markdown h2 {
+  font-size: 1rem;
+}
+
+markdown h3 {
+  font-size: 1rem;
+}
+
+markdown h4 {
+  font-size: 1rem;
+}
+/* You can add global styles to this file, and also import other style files */
+
+
+h1{
+  font-size: 1.2rem !important;
+  font-weight: 700;
+}
+
+
+h2{
+  font-size: 1rem !important;
+  font-weight: 700;
+}
+
+
+h3{
+  font-size: 1rem !important;
+}
+
+
+p {
+  font-size: 0.9rem;
+}
+
+
+
+/*# sourceMappingURL=main.css.map*/

@@ -1,7 +1,6 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 build
-dist
 node_modules
 lint.xml
 reports/*
@@ -18,7 +17,6 @@ stats.json
 
 
 # compiled output
-/dist
 /tmp
 /out-tsc
 
